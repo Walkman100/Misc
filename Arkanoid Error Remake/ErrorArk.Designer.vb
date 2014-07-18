@@ -75,6 +75,7 @@ Partial Class ErrorArk
         'ThreadBouncer
         '
         Me.ThreadBouncer.WorkerSupportsCancellation = true
+        AddHandler Me.ThreadBouncer.DoWork, AddressOf Me.ThreadBouncer_DoWork
         '
         'ErrorArk
         '
@@ -96,6 +97,7 @@ Partial Class ErrorArk
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.TopMost = true
         Me.UseWaitCursor = true
+        AddHandler KeyPress, AddressOf Me.ErrorArk_KeyPress
         CType(Me.imgError,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
