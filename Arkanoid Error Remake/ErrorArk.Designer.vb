@@ -23,10 +23,11 @@ Partial Class ErrorArk
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.button = New System.Windows.Forms.Button()
-        Me.pictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.label1 = New System.Windows.Forms.Label()
-        Me.label2 = New System.Windows.Forms.Label()
-        CType(Me.pictureBox1,System.ComponentModel.ISupportInitialize).BeginInit
+        Me.imgError = New System.Windows.Forms.PictureBox()
+        Me.lblError = New System.Windows.Forms.Label()
+        Me.lblScore = New System.Windows.Forms.Label()
+        Me.ThreadBouncer = New System.ComponentModel.BackgroundWorker()
+        CType(Me.imgError,System.ComponentModel.ISupportInitialize).BeginInit
         Me.SuspendLayout
         '
         'button
@@ -38,42 +39,52 @@ Partial Class ErrorArk
         Me.button.TabIndex = 0
         Me.button.Text = "OK"
         Me.button.UseVisualStyleBackColor = true
+        Me.button.UseWaitCursor = true
+        AddHandler Me.button.Click, AddressOf Me.Button_Click
         '
-        'pictureBox1
+        'imgError
         '
-        Me.pictureBox1.Location = New System.Drawing.Point(12, 12)
-        Me.pictureBox1.Name = "pictureBox1"
-        Me.pictureBox1.Size = New System.Drawing.Size(50, 50)
-        Me.pictureBox1.TabIndex = 1
-        Me.pictureBox1.TabStop = false
+        Me.imgError.Location = New System.Drawing.Point(12, 12)
+        Me.imgError.Name = "imgError"
+        Me.imgError.Size = New System.Drawing.Size(50, 50)
+        Me.imgError.TabIndex = 1
+        Me.imgError.TabStop = false
+        Me.imgError.UseWaitCursor = true
         '
-        'label1
+        'lblError
         '
-        Me.label1.AutoSize = true
-        Me.label1.Location = New System.Drawing.Point(68, 29)
-        Me.label1.Name = "label1"
-        Me.label1.Size = New System.Drawing.Size(204, 13)
-        Me.label1.TabIndex = 2
-        Me.label1.Text = "memory.dll: all alloc attempts failed for size"
+        Me.lblError.AutoSize = true
+        Me.lblError.Location = New System.Drawing.Point(68, 29)
+        Me.lblError.Name = "lblError"
+        Me.lblError.Size = New System.Drawing.Size(204, 13)
+        Me.lblError.TabIndex = 2
+        Me.lblError.Text = "memory.dll: all alloc attempts failed for size"
+        Me.lblError.UseWaitCursor = true
         '
-        'label2
+        'lblScore
         '
-        Me.label2.AutoSize = true
-        Me.label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
-        Me.label2.Location = New System.Drawing.Point(271, 30)
-        Me.label2.Name = "label2"
-        Me.label2.Size = New System.Drawing.Size(14, 13)
-        Me.label2.TabIndex = 3
-        Me.label2.Text = "0"
+        Me.lblScore.AutoSize = true
+        Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblScore.Location = New System.Drawing.Point(271, 30)
+        Me.lblScore.Name = "lblScore"
+        Me.lblScore.Size = New System.Drawing.Size(14, 13)
+        Me.lblScore.TabIndex = 3
+        Me.lblScore.Text = "0"
+        Me.lblScore.UseWaitCursor = true
+        '
+        'ThreadBouncer
+        '
+        Me.ThreadBouncer.WorkerSupportsCancellation = true
         '
         'ErrorArk
         '
+        Me.AcceptButton = Me.button
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(326, 122)
-        Me.Controls.Add(Me.label2)
-        Me.Controls.Add(Me.label1)
-        Me.Controls.Add(Me.pictureBox1)
+        Me.Controls.Add(Me.lblScore)
+        Me.Controls.Add(Me.lblError)
+        Me.Controls.Add(Me.imgError)
         Me.Controls.Add(Me.button)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = false
@@ -85,13 +96,14 @@ Partial Class ErrorArk
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.TopMost = true
         Me.UseWaitCursor = true
-        CType(Me.pictureBox1,System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.imgError,System.ComponentModel.ISupportInitialize).EndInit
         Me.ResumeLayout(false)
         Me.PerformLayout
     End Sub
-    Private label2 As System.Windows.Forms.Label
-    Private label1 As System.Windows.Forms.Label
-    Private pictureBox1 As System.Windows.Forms.PictureBox
+    Private ThreadBouncer As System.ComponentModel.BackgroundWorker
+    Private lblScore As System.Windows.Forms.Label
+    Private lblError As System.Windows.Forms.Label
+    Private imgError As System.Windows.Forms.PictureBox
     Private button As System.Windows.Forms.Button
 
 End Class
