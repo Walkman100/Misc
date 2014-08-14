@@ -1,4 +1,5 @@
 @echo off
+color 0A
 cd %~dp0
 xcopy "install-data\sudo.cmd" "%windir%\system32"
 xcopy "install-data\sudoRED.cmd" "%windir%\system32"
