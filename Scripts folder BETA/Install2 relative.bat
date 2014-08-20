@@ -20,11 +20,8 @@ echo Copying CMD files done, starting registry key generating...
 @echo "HasLUAShield"="" >> %temp%\REDContext.reg
 @echo. >> %temp%\REDContext.reg
 @echo [HKEY_CLASSES_ROOT\Folder\shell\Remove empty dirs (ADMIN)\command] >> %temp%\REDContext.reg
-@echo @="sudoRED \"%1\"" >> %temp%\REDContext.reg
+@echo @="sudoRED \"%%1\"" >> %temp%\REDContext.reg
 
-echo Coprying registry code done, attempting to merge...
-
+echo Copying registry code done, attempting to merge...
 %temp%\REDContext.reg
-
-echo Install Complete!
 pause
