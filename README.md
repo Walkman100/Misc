@@ -1,5 +1,6 @@
 Misc Files and Projects
 ===========
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Walkman100/Misc?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Some projects and stuff. Only project so far is a remake of an error program I found.
 
