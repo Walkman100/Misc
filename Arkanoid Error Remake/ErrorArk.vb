@@ -8,7 +8,7 @@
         button.Location = New Size(131, 87)
         facing = 1
         score = 0
-        lblScore.Text = "0"
+        lblScore.Text = score
         Me.Text = ""
     End Sub
 
@@ -44,32 +44,35 @@
     End Sub
     
     Sub ThreadBouncer_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles ThreadBouncer.DoWork
-        Select Case facing
-            Case 0
-                imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y + 1)
-                'If touching top border then
-                '    facing = 1
-                'ElseIf touching right border then
-                '    facing = 3
-                'End If
-            Case 1
-                imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y - 1)
-                'If touching button then
-                '    facing = 0
-                'End If
-            Case 2
-                imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y - 1)
-                'If touching button then
-                '    facing = 3
-                'End If
-            Case 3
-                imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y + 1)
-                'If touching top border then
-                '    facing = 2
-                'ElseIf touching left border then
-                '    facing = 0
-                'End If
-        End Select
-
+        Try
+            Select Case facing
+                Case 0
+                    imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y + 1)
+                    'If touching top border then
+                    '    facing = 1
+                    'ElseIf touching right border then
+                    '    facing = 3
+                    'End If
+                Case 1
+                    imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y - 1)
+                    'If touching button then
+                    '    facing = 0
+                    'End If
+                Case 2
+                    imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y - 1)
+                    'If touching button then
+                    '    facing = 3
+                    'End If
+                Case 3
+                    imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y + 1)
+                    'If touching top border then
+                    '    facing = 2
+                    'ElseIf touching left border then
+                    '    facing = 0
+                    'End If
+            End Select
+        Catch ex As Exception
+            MsgBox(ex.ToString)
+        End Try
     End Sub
 End Class

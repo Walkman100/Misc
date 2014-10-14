@@ -44,11 +44,11 @@ Partial Class ErrorArk
         '
         'imgError
         '
-        Me.imgError.BackgroundImage = Global.ErrorArk.My.Resources.Resources._100x100_broken_image
-        Me.imgError.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.imgError.Image = Global.ErrorArk.My.Resources.Resources._100x100_broken_image
         Me.imgError.Location = New System.Drawing.Point(12, 12)
         Me.imgError.Name = "imgError"
         Me.imgError.Size = New System.Drawing.Size(50, 50)
+        Me.imgError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.imgError.TabIndex = 1
         Me.imgError.TabStop = False
         Me.imgError.UseWaitCursor = True
@@ -96,7 +96,6 @@ Partial Class ErrorArk
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.TopMost = True
         Me.UseWaitCursor = True
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
