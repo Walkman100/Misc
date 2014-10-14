@@ -22,13 +22,15 @@ Partial Class ErrorArk
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.button = New System.Windows.Forms.Button()
         Me.imgError = New System.Windows.Forms.PictureBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.ThreadBouncer = New System.ComponentModel.BackgroundWorker()
-        CType(Me.imgError,System.ComponentModel.ISupportInitialize).BeginInit
-        Me.SuspendLayout
+        Me.TimerBouncer = New System.Windows.Forms.Timer(Me.components)
+        CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.SuspendLayout()
         '
         'button
         '
@@ -78,6 +80,9 @@ Partial Class ErrorArk
         '
         Me.ThreadBouncer.WorkerSupportsCancellation = True
         '
+        'TimerBouncer
+        '
+        '
         'ErrorArk
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -107,5 +112,6 @@ Partial Class ErrorArk
     Friend WithEvents lblError As System.Windows.Forms.Label
     Friend WithEvents imgError As System.Windows.Forms.PictureBox
     Friend WithEvents button As System.Windows.Forms.Button
+    Friend WithEvents TimerBouncer As System.Windows.Forms.Timer
 
 End Class
