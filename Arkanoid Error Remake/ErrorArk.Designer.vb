@@ -37,75 +37,76 @@ Partial Class ErrorArk
         Me.button.Name = "button"
         Me.button.Size = New System.Drawing.Size(75, 23)
         Me.button.TabIndex = 0
+        Me.button.TabStop = False
         Me.button.Text = "OK"
-        Me.button.UseVisualStyleBackColor = true
-        Me.button.UseWaitCursor = true
-        AddHandler Me.button.Click, AddressOf Me.Button_Click
+        Me.button.UseVisualStyleBackColor = True
+        Me.button.UseWaitCursor = True
         '
         'imgError
         '
+        Me.imgError.BackgroundImage = Global.ErrorArk.My.Resources.Resources._100x100_broken_image
+        Me.imgError.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.imgError.Location = New System.Drawing.Point(12, 12)
         Me.imgError.Name = "imgError"
         Me.imgError.Size = New System.Drawing.Size(50, 50)
         Me.imgError.TabIndex = 1
-        Me.imgError.TabStop = false
-        Me.imgError.UseWaitCursor = true
+        Me.imgError.TabStop = False
+        Me.imgError.UseWaitCursor = True
         '
         'lblError
         '
-        Me.lblError.AutoSize = true
+        Me.lblError.AutoSize = True
         Me.lblError.Location = New System.Drawing.Point(68, 29)
         Me.lblError.Name = "lblError"
         Me.lblError.Size = New System.Drawing.Size(204, 13)
         Me.lblError.TabIndex = 2
         Me.lblError.Text = "memory.dll: all alloc attempts failed for size"
-        Me.lblError.UseWaitCursor = true
+        Me.lblError.UseWaitCursor = True
         '
         'lblScore
         '
-        Me.lblScore.AutoSize = true
-        Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0,Byte))
+        Me.lblScore.AutoSize = True
+        Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblScore.Location = New System.Drawing.Point(271, 30)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(14, 13)
         Me.lblScore.TabIndex = 3
         Me.lblScore.Text = "0"
-        Me.lblScore.UseWaitCursor = true
+        Me.lblScore.UseWaitCursor = True
         '
         'ThreadBouncer
         '
-        Me.ThreadBouncer.WorkerSupportsCancellation = true
-        AddHandler Me.ThreadBouncer.DoWork, AddressOf Me.ThreadBouncer_DoWork
+        Me.ThreadBouncer.WorkerSupportsCancellation = True
         '
         'ErrorArk
         '
-        Me.AcceptButton = Me.button
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(326, 122)
         Me.Controls.Add(Me.lblScore)
         Me.Controls.Add(Me.lblError)
         Me.Controls.Add(Me.imgError)
         Me.Controls.Add(Me.button)
+        Me.Cursor = System.Windows.Forms.Cursors.WaitCursor
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
-        Me.MaximizeBox = false
-        Me.MinimizeBox = false
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "ErrorArk"
-        Me.ShowIcon = false
-        Me.ShowInTaskbar = false
+        Me.ShowIcon = False
+        Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.TopMost = true
-        Me.UseWaitCursor = true
-        AddHandler KeyPress, AddressOf Me.ErrorArk_KeyPress
-        CType(Me.imgError,System.ComponentModel.ISupportInitialize).EndInit
-        Me.ResumeLayout(false)
-        Me.PerformLayout
+        Me.TopMost = True
+        Me.UseWaitCursor = True
+        CType(Me.imgError, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ResumeLayout(False)
+        Me.PerformLayout()
+
     End Sub
-    Private ThreadBouncer As System.ComponentModel.BackgroundWorker
-    Private lblScore As System.Windows.Forms.Label
-    Private lblError As System.Windows.Forms.Label
-    Private imgError As System.Windows.Forms.PictureBox
-    Private button As System.Windows.Forms.Button
+    Friend WithEvents ThreadBouncer As System.ComponentModel.BackgroundWorker
+    Friend WithEvents lblScore As System.Windows.Forms.Label
+    Friend WithEvents lblError As System.Windows.Forms.Label
+    Friend WithEvents imgError As System.Windows.Forms.PictureBox
+    Friend WithEvents button As System.Windows.Forms.Button
 
 End Class
