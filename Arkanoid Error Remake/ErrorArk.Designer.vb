@@ -24,10 +24,10 @@ Partial Class ErrorArk
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.button = New System.Windows.Forms.Button()
-        Me.imgError = New System.Windows.Forms.PictureBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
         Me.TimerBouncer = New System.Windows.Forms.Timer(Me.components)
+        Me.imgError = New System.Windows.Forms.PictureBox()
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -43,21 +43,10 @@ Partial Class ErrorArk
         Me.button.UseVisualStyleBackColor = True
         Me.button.UseWaitCursor = True
         '
-        'imgError
-        '
-        Me.imgError.Image = Global.ErrorArk.My.Resources.Resources._100x100_broken_image
-        Me.imgError.Location = New System.Drawing.Point(12, 12)
-        Me.imgError.Name = "imgError"
-        Me.imgError.Size = New System.Drawing.Size(50, 50)
-        Me.imgError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.imgError.TabIndex = 1
-        Me.imgError.TabStop = False
-        Me.imgError.UseWaitCursor = True
-        '
         'lblError
         '
         Me.lblError.AutoSize = True
-        Me.lblError.Location = New System.Drawing.Point(68, 29)
+        Me.lblError.Location = New System.Drawing.Point(63, 35)
         Me.lblError.Name = "lblError"
         Me.lblError.Size = New System.Drawing.Size(204, 13)
         Me.lblError.TabIndex = 2
@@ -68,7 +57,7 @@ Partial Class ErrorArk
         '
         Me.lblScore.AutoSize = True
         Me.lblScore.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblScore.Location = New System.Drawing.Point(271, 30)
+        Me.lblScore.Location = New System.Drawing.Point(273, 35)
         Me.lblScore.Name = "lblScore"
         Me.lblScore.Size = New System.Drawing.Size(14, 13)
         Me.lblScore.TabIndex = 3
@@ -77,6 +66,18 @@ Partial Class ErrorArk
         '
         'TimerBouncer
         '
+        Me.TimerBouncer.Interval = 10
+        '
+        'imgError
+        '
+        Me.imgError.Image = Global.ErrorArk.My.Resources.Resources._Error
+        Me.imgError.Location = New System.Drawing.Point(25, 25)
+        Me.imgError.Name = "imgError"
+        Me.imgError.Size = New System.Drawing.Size(32, 32)
+        Me.imgError.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.imgError.TabIndex = 1
+        Me.imgError.TabStop = False
+        Me.imgError.UseWaitCursor = True
         '
         'ErrorArk
         '
