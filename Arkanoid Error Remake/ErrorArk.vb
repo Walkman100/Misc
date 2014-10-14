@@ -3,7 +3,6 @@
     Dim facing as byte = 0 '0 is NE, 1 is SE, 2 is SW, 3 is NW
     
     Sub ResetGUI()
-        ThreadBouncer.CancelAsync()
         TimerBouncer.Stop()
         imgError.Location = New Size(12, 12)
         button.Location = New Size(131, 87)
@@ -16,13 +15,11 @@
     Sub Button_Click(sender As Object, e As EventArgs) Handles button.Click
         ' play error sound
         ResetGUI()
-        'ThreadBouncer.RunWorkerAsync()
         TimerBouncer.Start()
     End Sub
 
     Private Sub ErrorArk_MouseClick(sender As Object, e As MouseEventArgs) Handles Me.MouseClick
         ResetGUI()
-        'ThreadBouncer.RunWorkerAsync()
         TimerBouncer.Start()
     End Sub
 
@@ -46,69 +43,32 @@
         End If
     End Sub
     
-    Sub ThreadBouncer_DoWork(sender As Object, e As System.ComponentModel.DoWorkEventArgs) Handles ThreadBouncer.DoWork
-        Try
-            Select Case facing
-                Case 0
-                    imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y + 1)
-                    'If touching top border then
-                    '    facing = 1
-                    'ElseIf touching right border then
-                    '    facing = 3
-                    'End If
-                Case 1
-                    imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y - 1)
-                    'If touching button then
-                    '    facing = 0
-                    'End If
-                Case 2
-                    imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y - 1)
-                    'If touching button then
-                    '    facing = 3
-                    'End If
-                Case 3
-                    imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y + 1)
-                    'If touching top border then
-                    '    facing = 2
-                    'ElseIf touching left border then
-                    '    facing = 0
-                    'End If
-            End Select
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
-    End Sub
-
     Private Sub TimerBouncer_Tick(sender As Object, e As EventArgs) Handles TimerBouncer.Tick
-        Try
-            Select Case facing
-                Case 0
-                    imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y + 1)
-                    'If touching top border then
-                    '    facing = 1
-                    'ElseIf touching right border then
-                    '    facing = 3
-                    'End If
-                Case 1
-                    imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y - 1)
-                    'If touching button then
-                    '    facing = 0
-                    'End If
-                Case 2
-                    imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y - 1)
-                    'If touching button then
-                    '    facing = 3
-                    'End If
-                Case 3
-                    imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y + 1)
-                    'If touching top border then
-                    '    facing = 2
-                    'ElseIf touching left border then
-                    '    facing = 0
-                    'End If
-            End Select
-        Catch ex As Exception
-            MsgBox(ex.ToString)
-        End Try
+        Select Case facing
+            Case 0
+                imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y + 1)
+                'If touching top border then
+                '    facing = 1
+                'ElseIf touching right border then
+                '    facing = 3
+                'End If
+            Case 1
+                imgError.Location = New Size(imgError.Location.X + 1, imgError.Location.Y - 1)
+                'If touching button then
+                '    facing = 0
+                'End If
+            Case 2
+                imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y - 1)
+                'If touching button then
+                '    facing = 3
+                'End If
+            Case 3
+                imgError.Location = New Size(imgError.Location.X - 1, imgError.Location.Y + 1)
+                'If touching top border then
+                '    facing = 2
+                'ElseIf touching left border then
+                '    facing = 0
+                'End If
+        End Select
     End Sub
 End Class

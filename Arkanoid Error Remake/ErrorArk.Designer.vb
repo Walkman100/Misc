@@ -27,7 +27,6 @@ Partial Class ErrorArk
         Me.imgError = New System.Windows.Forms.PictureBox()
         Me.lblError = New System.Windows.Forms.Label()
         Me.lblScore = New System.Windows.Forms.Label()
-        Me.ThreadBouncer = New System.ComponentModel.BackgroundWorker()
         Me.TimerBouncer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.imgError, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -76,10 +75,6 @@ Partial Class ErrorArk
         Me.lblScore.Text = "0"
         Me.lblScore.UseWaitCursor = True
         '
-        'ThreadBouncer
-        '
-        Me.ThreadBouncer.WorkerSupportsCancellation = True
-        '
         'TimerBouncer
         '
         '
@@ -107,7 +102,6 @@ Partial Class ErrorArk
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ThreadBouncer As System.ComponentModel.BackgroundWorker
     Friend WithEvents lblScore As System.Windows.Forms.Label
     Friend WithEvents lblError As System.Windows.Forms.Label
     Friend WithEvents imgError As System.Windows.Forms.PictureBox
