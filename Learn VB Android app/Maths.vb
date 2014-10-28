@@ -1,4 +1,7 @@
 ﻿Public Class Maths
+    Dim InsertFrom As Integer
+    Dim InsertTo As Integer
+    Dim InsertStep As Integer
 
     Private Sub txtFactor_TextChanged(sender As Object, e As EventArgs) Handles txtFactor.TextChanged, txtNumber1.TextChanged, txtNumber2.TextChanged, txtNumber3.TextChanged
         txtResult1.Text = txtNumber1.Text / txtFactor.Text
@@ -86,21 +89,14 @@
     End Sub
 
     Private Sub btnInsertGo_Click(sender As Object, e As EventArgs) Handles btnInsertGo.Click
-        Dim InsertFrom As New Integer
         InsertFrom = txtInsertFrom.Text
-        Dim InsertTo As New Integer
         InsertTo = txtInsertTo.Text
+        InsertStep = txtInsertStep.Text
+
         Me.WindowState = FormWindowState.Minimized
-        If chkInsertOrder.Checked = False Then
-            For i = InsertFrom To InsertTo
-                SendKeys.Send(i)
-                SendKeys.Send(txtInsertSeperator.Text)
-            Next
-        Else
-            For i = InsertFrom To InsertTo Step -1
-                SendKeys.Send(i)
-                SendKeys.Send(txtInsertSeperator.Text)
-            Next
-        End If
+        For i = InsertFrom To InsertTo Step InsertStep
+            SendKeys.Send(i)
+            SendKeys.Send(txtInsertSeperator.Text)
+        Next
     End Sub
 End Class

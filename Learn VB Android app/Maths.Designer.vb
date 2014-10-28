@@ -47,7 +47,8 @@ Partial Class Maths
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtInsertSeperator = New System.Windows.Forms.TextBox()
         Me.btnInsertGo = New System.Windows.Forms.Button()
-        Me.chkInsertOrder = New System.Windows.Forms.CheckBox()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.txtInsertStep = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'txtNumber1
@@ -223,14 +224,14 @@ Partial Class Maths
         '
         Me.txtInsertFrom.Location = New System.Drawing.Point(12, 265)
         Me.txtInsertFrom.Name = "txtInsertFrom"
-        Me.txtInsertFrom.Size = New System.Drawing.Size(100, 20)
+        Me.txtInsertFrom.Size = New System.Drawing.Size(50, 20)
         Me.txtInsertFrom.TabIndex = 20
         Me.txtInsertFrom.Text = "1"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(118, 268)
+        Me.Label2.Location = New System.Drawing.Point(68, 268)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(16, 13)
         Me.Label2.TabIndex = 21
@@ -238,9 +239,9 @@ Partial Class Maths
         '
         'txtInsertTo
         '
-        Me.txtInsertTo.Location = New System.Drawing.Point(140, 265)
+        Me.txtInsertTo.Location = New System.Drawing.Point(90, 265)
         Me.txtInsertTo.Name = "txtInsertTo"
-        Me.txtInsertTo.Size = New System.Drawing.Size(100, 20)
+        Me.txtInsertTo.Size = New System.Drawing.Size(50, 20)
         Me.txtInsertTo.TabIndex = 22
         Me.txtInsertTo.Text = "200"
         '
@@ -263,22 +264,29 @@ Partial Class Maths
         '
         'btnInsertGo
         '
-        Me.btnInsertGo.Location = New System.Drawing.Point(140, 302)
+        Me.btnInsertGo.Location = New System.Drawing.Point(118, 302)
         Me.btnInsertGo.Name = "btnInsertGo"
-        Me.btnInsertGo.Size = New System.Drawing.Size(100, 23)
+        Me.btnInsertGo.Size = New System.Drawing.Size(113, 23)
         Me.btnInsertGo.TabIndex = 25
         Me.btnInsertGo.Text = "Go"
         Me.btnInsertGo.UseVisualStyleBackColor = True
         '
-        'chkInsertOrder
+        'Label4
         '
-        Me.chkInsertOrder.AutoSize = True
-        Me.chkInsertOrder.Location = New System.Drawing.Point(246, 267)
-        Me.chkInsertOrder.Name = "chkInsertOrder"
-        Me.chkInsertOrder.Size = New System.Drawing.Size(79, 17)
-        Me.chkInsertOrder.TabIndex = 26
-        Me.chkInsertOrder.Text = "Backwards"
-        Me.chkInsertOrder.UseVisualStyleBackColor = True
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(146, 268)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(29, 13)
+        Me.Label4.TabIndex = 26
+        Me.Label4.Text = "Step"
+        '
+        'txtInsertStep
+        '
+        Me.txtInsertStep.Location = New System.Drawing.Point(181, 265)
+        Me.txtInsertStep.Name = "txtInsertStep"
+        Me.txtInsertStep.Size = New System.Drawing.Size(50, 20)
+        Me.txtInsertStep.TabIndex = 27
+        Me.txtInsertStep.Text = "1"
         '
         'Maths
         '
@@ -287,7 +295,8 @@ Partial Class Maths
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(340, 455)
-        Me.Controls.Add(Me.chkInsertOrder)
+        Me.Controls.Add(Me.txtInsertStep)
+        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnInsertGo)
         Me.Controls.Add(Me.txtInsertSeperator)
         Me.Controls.Add(Me.Label3)
@@ -346,5 +355,6 @@ Partial Class Maths
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtInsertSeperator As System.Windows.Forms.TextBox
     Friend WithEvents btnInsertGo As System.Windows.Forms.Button
-    Friend WithEvents chkInsertOrder As System.Windows.Forms.CheckBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents txtInsertStep As System.Windows.Forms.TextBox
 End Class
