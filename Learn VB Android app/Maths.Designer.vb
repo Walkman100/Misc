@@ -40,6 +40,14 @@ Partial Class Maths
         Me.cbConvertType = New System.Windows.Forms.ComboBox()
         Me.btnConvert = New System.Windows.Forms.Button()
         Me.btnAutoConvert = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtInsertFrom = New System.Windows.Forms.TextBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txtInsertTo = New System.Windows.Forms.TextBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.txtInsertSeperator = New System.Windows.Forms.TextBox()
+        Me.btnInsertGo = New System.Windows.Forms.Button()
+        Me.chkInsertOrder = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'txtNumber1
@@ -131,7 +139,7 @@ Partial Class Maths
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnExit.AutoSize = True
         Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnExit.Location = New System.Drawing.Point(253, 258)
+        Me.btnExit.Location = New System.Drawing.Point(253, 420)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 10
@@ -140,7 +148,7 @@ Partial Class Maths
         '
         'txtIn
         '
-        Me.txtIn.Location = New System.Drawing.Point(12, 180)
+        Me.txtIn.Location = New System.Drawing.Point(12, 160)
         Me.txtIn.Name = "txtIn"
         Me.txtIn.Size = New System.Drawing.Size(100, 20)
         Me.txtIn.TabIndex = 11
@@ -149,7 +157,7 @@ Partial Class Maths
         '
         Me.txtOut.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtOut.Location = New System.Drawing.Point(228, 180)
+        Me.txtOut.Location = New System.Drawing.Point(228, 160)
         Me.txtOut.Name = "txtOut"
         Me.txtOut.Size = New System.Drawing.Size(100, 20)
         Me.txtOut.TabIndex = 12
@@ -157,7 +165,7 @@ Partial Class Maths
         'lblInput
         '
         Me.lblInput.AutoSize = True
-        Me.lblInput.Location = New System.Drawing.Point(12, 164)
+        Me.lblInput.Location = New System.Drawing.Point(12, 144)
         Me.lblInput.Name = "lblInput"
         Me.lblInput.Size = New System.Drawing.Size(34, 13)
         Me.lblInput.TabIndex = 13
@@ -166,7 +174,7 @@ Partial Class Maths
         'lblOutput
         '
         Me.lblOutput.AutoSize = True
-        Me.lblOutput.Location = New System.Drawing.Point(227, 164)
+        Me.lblOutput.Location = New System.Drawing.Point(227, 144)
         Me.lblOutput.Name = "lblOutput"
         Me.lblOutput.Size = New System.Drawing.Size(42, 13)
         Me.lblOutput.TabIndex = 14
@@ -177,7 +185,7 @@ Partial Class Maths
         Me.cbConvertType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cbConvertType.FormattingEnabled = True
         Me.cbConvertType.Items.AddRange(New Object() {"H:M:S -> S", "H:M:S -> M", "H:M:S -> H", "M:S -> S", "M:S -> M", "M:S -> H", "S -> S", "S -> M", "S -> H"})
-        Me.cbConvertType.Location = New System.Drawing.Point(118, 180)
+        Me.cbConvertType.Location = New System.Drawing.Point(118, 160)
         Me.cbConvertType.Name = "cbConvertType"
         Me.cbConvertType.Size = New System.Drawing.Size(104, 21)
         Me.cbConvertType.TabIndex = 16
@@ -185,7 +193,7 @@ Partial Class Maths
         'btnConvert
         '
         Me.btnConvert.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnConvert.Location = New System.Drawing.Point(253, 206)
+        Me.btnConvert.Location = New System.Drawing.Point(253, 186)
         Me.btnConvert.Name = "btnConvert"
         Me.btnConvert.Size = New System.Drawing.Size(75, 23)
         Me.btnConvert.TabIndex = 17
@@ -195,12 +203,82 @@ Partial Class Maths
         'btnAutoConvert
         '
         Me.btnAutoConvert.AutoSize = True
-        Me.btnAutoConvert.Location = New System.Drawing.Point(12, 206)
+        Me.btnAutoConvert.Location = New System.Drawing.Point(12, 186)
         Me.btnAutoConvert.Name = "btnAutoConvert"
         Me.btnAutoConvert.Size = New System.Drawing.Size(192, 23)
         Me.btnAutoConvert.TabIndex = 18
         Me.btnAutoConvert.Text = "Get clipboard text, convert then copy"
         Me.btnAutoConvert.UseVisualStyleBackColor = True
+        '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(12, 249)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(102, 13)
+        Me.Label1.TabIndex = 19
+        Me.Label1.Text = "Insert numbers from:"
+        '
+        'txtInsertFrom
+        '
+        Me.txtInsertFrom.Location = New System.Drawing.Point(12, 265)
+        Me.txtInsertFrom.Name = "txtInsertFrom"
+        Me.txtInsertFrom.Size = New System.Drawing.Size(100, 20)
+        Me.txtInsertFrom.TabIndex = 20
+        Me.txtInsertFrom.Text = "1"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(118, 268)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(16, 13)
+        Me.Label2.TabIndex = 21
+        Me.Label2.Text = "to"
+        '
+        'txtInsertTo
+        '
+        Me.txtInsertTo.Location = New System.Drawing.Point(140, 265)
+        Me.txtInsertTo.Name = "txtInsertTo"
+        Me.txtInsertTo.Size = New System.Drawing.Size(100, 20)
+        Me.txtInsertTo.TabIndex = 22
+        Me.txtInsertTo.Text = "200"
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(12, 288)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(81, 13)
+        Me.Label3.TabIndex = 23
+        Me.Label3.Text = "With Seperator:"
+        '
+        'txtInsertSeperator
+        '
+        Me.txtInsertSeperator.Location = New System.Drawing.Point(12, 304)
+        Me.txtInsertSeperator.Name = "txtInsertSeperator"
+        Me.txtInsertSeperator.Size = New System.Drawing.Size(100, 20)
+        Me.txtInsertSeperator.TabIndex = 24
+        Me.txtInsertSeperator.Text = "{ENTER}"
+        '
+        'btnInsertGo
+        '
+        Me.btnInsertGo.Location = New System.Drawing.Point(140, 302)
+        Me.btnInsertGo.Name = "btnInsertGo"
+        Me.btnInsertGo.Size = New System.Drawing.Size(100, 23)
+        Me.btnInsertGo.TabIndex = 25
+        Me.btnInsertGo.Text = "Go"
+        Me.btnInsertGo.UseVisualStyleBackColor = True
+        '
+        'chkInsertOrder
+        '
+        Me.chkInsertOrder.AutoSize = True
+        Me.chkInsertOrder.Location = New System.Drawing.Point(246, 267)
+        Me.chkInsertOrder.Name = "chkInsertOrder"
+        Me.chkInsertOrder.Size = New System.Drawing.Size(79, 17)
+        Me.chkInsertOrder.TabIndex = 26
+        Me.chkInsertOrder.Text = "Backwards"
+        Me.chkInsertOrder.UseVisualStyleBackColor = True
         '
         'Maths
         '
@@ -208,7 +286,15 @@ Partial Class Maths
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
-        Me.ClientSize = New System.Drawing.Size(340, 293)
+        Me.ClientSize = New System.Drawing.Size(340, 455)
+        Me.Controls.Add(Me.chkInsertOrder)
+        Me.Controls.Add(Me.btnInsertGo)
+        Me.Controls.Add(Me.txtInsertSeperator)
+        Me.Controls.Add(Me.Label3)
+        Me.Controls.Add(Me.txtInsertTo)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.txtInsertFrom)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.btnAutoConvert)
         Me.Controls.Add(Me.btnConvert)
         Me.Controls.Add(Me.cbConvertType)
@@ -253,4 +339,12 @@ Partial Class Maths
     Friend WithEvents cbConvertType As System.Windows.Forms.ComboBox
     Friend WithEvents btnConvert As System.Windows.Forms.Button
     Friend WithEvents btnAutoConvert As System.Windows.Forms.Button
+    Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents txtInsertFrom As System.Windows.Forms.TextBox
+    Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents txtInsertTo As System.Windows.Forms.TextBox
+    Friend WithEvents Label3 As System.Windows.Forms.Label
+    Friend WithEvents txtInsertSeperator As System.Windows.Forms.TextBox
+    Friend WithEvents btnInsertGo As System.Windows.Forms.Button
+    Friend WithEvents chkInsertOrder As System.Windows.Forms.CheckBox
 End Class

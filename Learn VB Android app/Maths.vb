@@ -84,4 +84,23 @@
         btnConvert_Click(Nothing, Nothing)
         Clipboard.SetText(txtOut.Text)
     End Sub
+
+    Private Sub btnInsertGo_Click(sender As Object, e As EventArgs) Handles btnInsertGo.Click
+        Dim InsertFrom As New Integer
+        InsertFrom = txtInsertFrom.Text
+        Dim InsertTo As New Integer
+        InsertTo = txtInsertTo.Text
+        Me.WindowState = FormWindowState.Minimized
+        If chkInsertOrder.Checked = False Then
+            For i = InsertFrom To InsertTo
+                SendKeys.Send(i)
+                SendKeys.Send(txtInsertSeperator.Text)
+            Next
+        Else
+            For i = InsertFrom To InsertTo Step -1
+                SendKeys.Send(i)
+                SendKeys.Send(txtInsertSeperator.Text)
+            Next
+        End If
+    End Sub
 End Class
