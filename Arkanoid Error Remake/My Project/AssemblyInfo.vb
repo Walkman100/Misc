@@ -8,11 +8,11 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("ErrorArk")> 
-<Assembly: AssemblyDescription("ErrorArk")> 
+<Assembly: AssemblyTitle("Error Ark")> 
+<Assembly: AssemblyDescription("Error Arkanoid VB.Net Remake")> 
 <Assembly: AssemblyCompany("DeavmiOSS")> 
 <Assembly: AssemblyProduct("ErrorArk")> 
-<Assembly: AssemblyCopyright("ErrorArk")> 
+<Assembly: AssemblyCopyright("FOSS from Walkman 2014")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
