@@ -38,7 +38,7 @@ Partial Class SudoGUI
         Me.ShowInTaskbar = False
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
-        Me.Text = "Sudo"
+        Me.Text = "SudoGUI"
         Me.ResumeLayout(False)
 
     End Sub

@@ -6,9 +6,9 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{DBA20F60-C2BF-4FDB-93CD-C1FFD77F09B9}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <StartupObject>Sudo.NET.My.MyApplication</StartupObject>
-    <RootNamespace>Sudo.NET</RootNamespace>
-    <AssemblyName>Sudo.NET</AssemblyName>
+    <StartupObject>SudoGUI.My.MyApplication</StartupObject>
+    <RootNamespace>SudoGUI</RootNamespace>
+    <AssemblyName>SudoGUI</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>WindowsForms</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>Sudo.NET.xml</DocumentationFile>
+    <DocumentationFile>SudoGUI.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>Sudo.NET.xml</DocumentationFile>
+    <DocumentationFile>SudoGUI.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -70,11 +70,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Sudo.NET.vb">
+    <Compile Include="SudoGUI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sudo.NET.Designer.vb">
-      <DependentUpon>Sudo.NET.vb</DependentUpon>
+    <Compile Include="SudoGUI.Designer.vb">
+      <DependentUpon>SudoGUI.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -100,8 +100,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sudo.NET.resx">
-      <DependentUpon>Sudo.NET.vb</DependentUpon>
+    <EmbeddedResource Include="SudoGUI.resx">
+      <DependentUpon>SudoGUI.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
