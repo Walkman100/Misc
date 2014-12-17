@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Sudo.NET.Sudo
+            Me.MainForm = Global.SudoGUI.SudoGUI
         End Sub
     End Class
 End Namespace

@@ -64,9 +64,9 @@ Namespace My
     Friend Module MySettingsProperty
         
         <Global.System.ComponentModel.Design.HelpKeywordAttribute("My.Settings")>  _
-        Friend ReadOnly Property Settings() As Global.Sudo.NET.My.MySettings
+        Friend ReadOnly Property Settings() As Global.SudoGUI.My.MySettings
             Get
-                Return Global.Sudo.NET.My.MySettings.Default
+                Return Global.SudoGUI.My.MySettings.Default
             End Get
         End Property
     End Module

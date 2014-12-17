@@ -1,4 +1,4 @@
-﻿Public Class Sudo
+﻿Public Class SudoGUI
     Dim isFirst As Boolean = True
     Dim ProgramToLaunch As String = ""
     Dim args As String = ""
