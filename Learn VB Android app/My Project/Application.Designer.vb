@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.Learn_VB_Android_app.Maths
+            Me.MainForm = Global.Learn_VB_Android_app.Startup
         End Sub
     End Class
 End Namespace
