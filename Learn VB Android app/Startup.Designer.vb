@@ -30,6 +30,10 @@ Partial Class Startup
         Me.btnMaths = New System.Windows.Forms.Button()
         Me.btnTest = New System.Windows.Forms.Button()
         Me.btnVars = New System.Windows.Forms.Button()
+        Me.btnTime = New System.Windows.Forms.Button()
+        Me.btnInserter = New System.Windows.Forms.Button()
+        Me.btnSteam = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnArrays
@@ -104,12 +108,52 @@ Partial Class Startup
         Me.btnVars.Text = "Variables"
         Me.btnVars.UseVisualStyleBackColor = True
         '
+        'btnTime
+        '
+        Me.btnTime.Location = New System.Drawing.Point(294, 12)
+        Me.btnTime.Name = "btnTime"
+        Me.btnTime.Size = New System.Drawing.Size(88, 23)
+        Me.btnTime.TabIndex = 8
+        Me.btnTime.Text = "TimeConverter"
+        Me.btnTime.UseVisualStyleBackColor = True
+        '
+        'btnInserter
+        '
+        Me.btnInserter.Location = New System.Drawing.Point(388, 12)
+        Me.btnInserter.Name = "btnInserter"
+        Me.btnInserter.Size = New System.Drawing.Size(88, 23)
+        Me.btnInserter.TabIndex = 9
+        Me.btnInserter.Text = "NumberInserter"
+        Me.btnInserter.UseVisualStyleBackColor = True
+        '
+        'btnSteam
+        '
+        Me.btnSteam.Location = New System.Drawing.Point(482, 12)
+        Me.btnSteam.Name = "btnSteam"
+        Me.btnSteam.Size = New System.Drawing.Size(88, 23)
+        Me.btnSteam.TabIndex = 10
+        Me.btnSteam.Text = "SteamIDLinker"
+        Me.btnSteam.UseVisualStyleBackColor = True
+        '
+        'btnExit
+        '
+        Me.btnExit.Location = New System.Drawing.Point(482, 41)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(88, 23)
+        Me.btnExit.TabIndex = 11
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
+        '
         'Startup
         '
         Me.AcceptButton = Me.btnMaths
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(489, 78)
+        Me.ClientSize = New System.Drawing.Size(583, 78)
+        Me.Controls.Add(Me.btnExit)
+        Me.Controls.Add(Me.btnSteam)
+        Me.Controls.Add(Me.btnInserter)
+        Me.Controls.Add(Me.btnTime)
         Me.Controls.Add(Me.btnVars)
         Me.Controls.Add(Me.btnTest)
         Me.Controls.Add(Me.btnMaths)
@@ -132,4 +176,8 @@ Partial Class Startup
     Friend WithEvents btnMaths As System.Windows.Forms.Button
     Friend WithEvents btnTest As System.Windows.Forms.Button
     Friend WithEvents btnVars As System.Windows.Forms.Button
+    Friend WithEvents btnTime As System.Windows.Forms.Button
+    Friend WithEvents btnInserter As System.Windows.Forms.Button
+    Friend WithEvents btnSteam As System.Windows.Forms.Button
+    Friend WithEvents btnExit As System.Windows.Forms.Button
 End Class

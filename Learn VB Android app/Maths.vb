@@ -1,8 +1,5 @@
 ﻿Public Class Maths
-    Dim InsertFrom As Integer
-    Dim InsertTo As Integer
-    Dim InsertStep As Integer
-
+    
     Private Sub txtFactor_TextChanged(sender As Object, e As EventArgs) Handles txtFactor.TextChanged, txtNumber1.TextChanged, txtNumber2.TextChanged, txtNumber3.TextChanged
         txtResult1.Text = txtNumber1.Text / txtFactor.Text
         txtResult2.Text = txtNumber2.Text / txtFactor.Text
@@ -27,17 +24,5 @@
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()
-    End Sub
-
-    Private Sub btnInsertGo_Click(sender As Object, e As EventArgs) Handles btnInsertGo.Click
-        InsertFrom = txtInsertFrom.Text
-        InsertTo = txtInsertTo.Text
-        InsertStep = txtInsertStep.Text
-
-        Me.WindowState = FormWindowState.Minimized
-        For i = InsertFrom To InsertTo Step InsertStep
-            SendKeys.Send(i)
-            SendKeys.Send(txtInsertSeperator.Text)
-        Next
     End Sub
 End Class

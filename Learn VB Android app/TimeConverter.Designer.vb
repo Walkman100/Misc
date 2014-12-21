@@ -118,6 +118,7 @@ Partial Class TimeConverter
         Me.Controls.Add(Me.btnConvert)
         Me.Controls.Add(Me.btnAutoConvert)
         Me.Name = "TimeConverter"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TimeConverter"
         Me.ResumeLayout(False)
         Me.PerformLayout()

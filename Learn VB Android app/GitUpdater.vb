@@ -3,7 +3,7 @@ Imports System.IO
 
 Public Class GitUpdater
     
-    Dim usrProfile As String = Environment.GetEnvironmentVariable("HOMEPATH")
+    Dim usrProfile As String = Environment.GetEnvironmentVariable("USERPROFILE")
     Dim Dir As String = usrProfile & "\Documents\GitHub"
     
     Private Sub btnExit_Click(sender As Object, e As EventArgs)

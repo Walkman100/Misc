@@ -134,10 +134,22 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="NumberInserter.Designer.vb">
+      <DependentUpon>NumberInserter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="NumberInserter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Startup.Designer.vb">
       <DependentUpon>Startup.vb</DependentUpon>
     </Compile>
     <Compile Include="Startup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SteamIDLinker.Designer.vb">
+      <DependentUpon>SteamIDLinker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SteamIDLinker.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Test.designer.vb">
@@ -184,8 +196,14 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="NumberInserter.resx">
+      <DependentUpon>NumberInserter.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SteamIDLinker.resx">
+      <DependentUpon>SteamIDLinker.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.vb</DependentUpon>
