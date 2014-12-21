@@ -51,7 +51,7 @@
         If cbSteamGameID.Text = "Game ID" Or cbSteamGameID.Text = "" Then
             MsgNoGameID()
         Else
-            MsgBox("steam://run/" & cbSteamGameID.Text)
+            Process.Start("steam://run/" & cbSteamGameID.Text)
         End If
     End Sub
 
@@ -59,7 +59,7 @@
         If cbSteamGameID.Text = "Game ID" Or cbSteamGameID.Text = "" Then
             MsgNoGameID()
         Else
-            MsgBox("steam://rungameid/" & cbSteamGameID.Text)
+            Process.Start("steam://rungameid/" & cbSteamGameID.Text)
         End If
     End Sub
 
@@ -67,7 +67,7 @@
         If cbSteamGameID.Text = "Game ID" Or cbSteamGameID.Text = "" Then
             MsgNoGameID()
         Else
-            MsgBox("steam://install/" & cbSteamGameID.Text)
+            Process.Start("steam://install/" & cbSteamGameID.Text)
         End If
     End Sub
 
