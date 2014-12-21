@@ -34,13 +34,6 @@ Partial Class Maths
         Me.lblFactor = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.txtIn = New System.Windows.Forms.TextBox()
-        Me.txtOut = New System.Windows.Forms.TextBox()
-        Me.lblInput = New System.Windows.Forms.Label()
-        Me.lblOutput = New System.Windows.Forms.Label()
-        Me.cbConvertType = New System.Windows.Forms.ComboBox()
-        Me.btnConvert = New System.Windows.Forms.Button()
-        Me.btnAutoConvert = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txtInsertFrom = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -141,76 +134,12 @@ Partial Class Maths
         Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnExit.AutoSize = True
         Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.btnExit.Location = New System.Drawing.Point(253, 420)
+        Me.btnExit.Location = New System.Drawing.Point(253, 302)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 10
         Me.btnExit.Text = "Close"
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'txtIn
-        '
-        Me.txtIn.Location = New System.Drawing.Point(12, 160)
-        Me.txtIn.Name = "txtIn"
-        Me.txtIn.Size = New System.Drawing.Size(100, 20)
-        Me.txtIn.TabIndex = 11
-        '
-        'txtOut
-        '
-        Me.txtOut.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.txtOut.Location = New System.Drawing.Point(228, 160)
-        Me.txtOut.Name = "txtOut"
-        Me.txtOut.Size = New System.Drawing.Size(100, 20)
-        Me.txtOut.TabIndex = 12
-        '
-        'lblInput
-        '
-        Me.lblInput.AutoSize = True
-        Me.lblInput.Location = New System.Drawing.Point(12, 144)
-        Me.lblInput.Name = "lblInput"
-        Me.lblInput.Size = New System.Drawing.Size(34, 13)
-        Me.lblInput.TabIndex = 13
-        Me.lblInput.Text = "Input:"
-        '
-        'lblOutput
-        '
-        Me.lblOutput.AutoSize = True
-        Me.lblOutput.Location = New System.Drawing.Point(227, 144)
-        Me.lblOutput.Name = "lblOutput"
-        Me.lblOutput.Size = New System.Drawing.Size(42, 13)
-        Me.lblOutput.TabIndex = 14
-        Me.lblOutput.Text = "Output:"
-        '
-        'cbConvertType
-        '
-        Me.cbConvertType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbConvertType.FormattingEnabled = True
-        Me.cbConvertType.Items.AddRange(New Object() {"H:M:S -> S", "H:M:S -> M", "H:M:S -> H", "M:S -> S", "M:S -> M", "M:S -> H", "S -> S", "S -> M", "S -> H"})
-        Me.cbConvertType.Location = New System.Drawing.Point(118, 160)
-        Me.cbConvertType.Name = "cbConvertType"
-        Me.cbConvertType.Size = New System.Drawing.Size(104, 21)
-        Me.cbConvertType.TabIndex = 16
-        '
-        'btnConvert
-        '
-        Me.btnConvert.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnConvert.Location = New System.Drawing.Point(253, 186)
-        Me.btnConvert.Name = "btnConvert"
-        Me.btnConvert.Size = New System.Drawing.Size(75, 23)
-        Me.btnConvert.TabIndex = 17
-        Me.btnConvert.Text = "Convert"
-        Me.btnConvert.UseVisualStyleBackColor = True
-        '
-        'btnAutoConvert
-        '
-        Me.btnAutoConvert.AutoSize = True
-        Me.btnAutoConvert.Location = New System.Drawing.Point(12, 186)
-        Me.btnAutoConvert.Name = "btnAutoConvert"
-        Me.btnAutoConvert.Size = New System.Drawing.Size(192, 23)
-        Me.btnAutoConvert.TabIndex = 18
-        Me.btnAutoConvert.Text = "Get clipboard text, convert then copy"
-        Me.btnAutoConvert.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -291,11 +220,10 @@ Partial Class Maths
         '
         'Maths
         '
-        Me.AcceptButton = Me.btnConvert
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
-        Me.ClientSize = New System.Drawing.Size(340, 455)
+        Me.ClientSize = New System.Drawing.Size(340, 337)
         Me.Controls.Add(Me.txtInsertStep)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btnInsertGo)
@@ -305,13 +233,6 @@ Partial Class Maths
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtInsertFrom)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnAutoConvert)
-        Me.Controls.Add(Me.btnConvert)
-        Me.Controls.Add(Me.cbConvertType)
-        Me.Controls.Add(Me.lblOutput)
-        Me.Controls.Add(Me.lblInput)
-        Me.Controls.Add(Me.txtOut)
-        Me.Controls.Add(Me.txtIn)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblResult)
         Me.Controls.Add(Me.lblFactor)
@@ -343,13 +264,6 @@ Partial Class Maths
     Friend WithEvents lblFactor As System.Windows.Forms.Label
     Friend WithEvents lblResult As System.Windows.Forms.Label
     Friend WithEvents btnExit As System.Windows.Forms.Button
-    Friend WithEvents txtIn As System.Windows.Forms.TextBox
-    Friend WithEvents txtOut As System.Windows.Forms.TextBox
-    Friend WithEvents lblInput As System.Windows.Forms.Label
-    Friend WithEvents lblOutput As System.Windows.Forms.Label
-    Friend WithEvents cbConvertType As System.Windows.Forms.ComboBox
-    Friend WithEvents btnConvert As System.Windows.Forms.Button
-    Friend WithEvents btnAutoConvert As System.Windows.Forms.Button
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents txtInsertFrom As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label

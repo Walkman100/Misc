@@ -146,6 +146,12 @@
     <Compile Include="Test.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="TimeConverter.Designer.vb">
+      <DependentUpon>TimeConverter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TimeConverter.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Variables.Designer.vb">
       <DependentUpon>Variables.vb</DependentUpon>
     </Compile>
@@ -183,6 +189,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Test.resx">
       <DependentUpon>Test.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeConverter.resx">
+      <DependentUpon>TimeConverter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Variables.resx">
       <DependentUpon>Variables.vb</DependentUpon>
