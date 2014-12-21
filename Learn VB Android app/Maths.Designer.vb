@@ -22,6 +22,7 @@ Partial Class Maths
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Maths))
         Me.txtNumber1 = New System.Windows.Forms.TextBox()
         Me.txtNumber2 = New System.Windows.Forms.TextBox()
         Me.txtNumber3 = New System.Windows.Forms.TextBox()
@@ -323,6 +324,7 @@ Partial Class Maths
         Me.Controls.Add(Me.txtNumber2)
         Me.Controls.Add(Me.txtNumber1)
         Me.HelpButton = True
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Maths"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Maths"

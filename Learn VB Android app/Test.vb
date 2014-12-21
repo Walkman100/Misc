@@ -10,6 +10,6 @@
     End Sub
 
     Private Sub cmdExit_Click(sender As Object, e As EventArgs) Handles cmdExit.Click
-        End
+        Me.Close()
     End Sub
 End Class

@@ -7,7 +7,7 @@ Public Class GitUpdater
     Dim Dir As String = usrProfile & "\Documents\GitHub"
     
     Private Sub btnExit_Click(sender As Object, e As EventArgs)
-        End
+        Me.Close()
     End Sub
     
     Sub BtnPopulate_Click(sender As Object, e As EventArgs)

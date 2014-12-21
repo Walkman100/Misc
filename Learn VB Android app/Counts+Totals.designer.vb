@@ -181,7 +181,7 @@ Partial Class CountsTotals
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 14
-        Me.btnExit.Text = "Exit"
+        Me.btnExit.Text = "Close"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'btnReset

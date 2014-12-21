@@ -34,16 +34,16 @@ Partial Class Startup
         '
         'btnArrays
         '
-        Me.btnArrays.Location = New System.Drawing.Point(12, 12)
+        Me.btnArrays.Location = New System.Drawing.Point(200, 41)
         Me.btnArrays.Name = "btnArrays"
-        Me.btnArrays.Size = New System.Drawing.Size(75, 23)
+        Me.btnArrays.Size = New System.Drawing.Size(88, 23)
         Me.btnArrays.TabIndex = 0
         Me.btnArrays.Text = "Arrays"
         Me.btnArrays.UseVisualStyleBackColor = True
         '
         'btnCalc
         '
-        Me.btnCalc.Location = New System.Drawing.Point(93, 12)
+        Me.btnCalc.Location = New System.Drawing.Point(12, 12)
         Me.btnCalc.Name = "btnCalc"
         Me.btnCalc.Size = New System.Drawing.Size(88, 23)
         Me.btnCalc.TabIndex = 1
@@ -52,54 +52,54 @@ Partial Class Startup
         '
         'btnCountsTotals
         '
-        Me.btnCountsTotals.Location = New System.Drawing.Point(187, 12)
+        Me.btnCountsTotals.Location = New System.Drawing.Point(106, 12)
         Me.btnCountsTotals.Name = "btnCountsTotals"
-        Me.btnCountsTotals.Size = New System.Drawing.Size(84, 23)
+        Me.btnCountsTotals.Size = New System.Drawing.Size(88, 23)
         Me.btnCountsTotals.TabIndex = 2
         Me.btnCountsTotals.Text = "Counts+Totals"
         Me.btnCountsTotals.UseVisualStyleBackColor = True
         '
         'btnGitUpdater
         '
-        Me.btnGitUpdater.Location = New System.Drawing.Point(277, 12)
+        Me.btnGitUpdater.Location = New System.Drawing.Point(294, 41)
         Me.btnGitUpdater.Name = "btnGitUpdater"
-        Me.btnGitUpdater.Size = New System.Drawing.Size(75, 23)
+        Me.btnGitUpdater.Size = New System.Drawing.Size(88, 23)
         Me.btnGitUpdater.TabIndex = 3
         Me.btnGitUpdater.Text = "GitUpdater"
         Me.btnGitUpdater.UseVisualStyleBackColor = True
         '
         'btnList
         '
-        Me.btnList.Location = New System.Drawing.Point(358, 12)
+        Me.btnList.Location = New System.Drawing.Point(12, 41)
         Me.btnList.Name = "btnList"
-        Me.btnList.Size = New System.Drawing.Size(75, 23)
+        Me.btnList.Size = New System.Drawing.Size(88, 23)
         Me.btnList.TabIndex = 4
         Me.btnList.Text = "ListBox"
         Me.btnList.UseVisualStyleBackColor = True
         '
         'btnMaths
         '
-        Me.btnMaths.Location = New System.Drawing.Point(439, 12)
+        Me.btnMaths.Location = New System.Drawing.Point(200, 12)
         Me.btnMaths.Name = "btnMaths"
-        Me.btnMaths.Size = New System.Drawing.Size(75, 23)
+        Me.btnMaths.Size = New System.Drawing.Size(88, 23)
         Me.btnMaths.TabIndex = 5
         Me.btnMaths.Text = "Maths"
         Me.btnMaths.UseVisualStyleBackColor = True
         '
         'btnTest
         '
-        Me.btnTest.Location = New System.Drawing.Point(520, 12)
+        Me.btnTest.Location = New System.Drawing.Point(388, 41)
         Me.btnTest.Name = "btnTest"
-        Me.btnTest.Size = New System.Drawing.Size(75, 23)
+        Me.btnTest.Size = New System.Drawing.Size(88, 23)
         Me.btnTest.TabIndex = 6
         Me.btnTest.Text = "Test"
         Me.btnTest.UseVisualStyleBackColor = True
         '
         'btnVars
         '
-        Me.btnVars.Location = New System.Drawing.Point(601, 12)
+        Me.btnVars.Location = New System.Drawing.Point(106, 41)
         Me.btnVars.Name = "btnVars"
-        Me.btnVars.Size = New System.Drawing.Size(75, 23)
+        Me.btnVars.Size = New System.Drawing.Size(88, 23)
         Me.btnVars.TabIndex = 7
         Me.btnVars.Text = "Variables"
         Me.btnVars.UseVisualStyleBackColor = True
@@ -109,7 +109,7 @@ Partial Class Startup
         Me.AcceptButton = Me.btnMaths
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(690, 47)
+        Me.ClientSize = New System.Drawing.Size(489, 78)
         Me.Controls.Add(Me.btnVars)
         Me.Controls.Add(Me.btnTest)
         Me.Controls.Add(Me.btnMaths)

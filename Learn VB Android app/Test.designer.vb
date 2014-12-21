@@ -42,7 +42,7 @@ Partial Class Test
         Me.cmdExit.Name = "cmdExit"
         Me.cmdExit.Size = New System.Drawing.Size(75, 23)
         Me.cmdExit.TabIndex = 1
-        Me.cmdExit.Text = "Exit"
+        Me.cmdExit.Text = "Close"
         Me.cmdExit.UseVisualStyleBackColor = True
         '
         'lblHelloWorld

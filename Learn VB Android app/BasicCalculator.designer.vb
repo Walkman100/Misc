@@ -116,7 +116,7 @@ Partial Class BasicCalculator
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 9
-        Me.btnExit.Text = "Exit"
+        Me.btnExit.Text = "Close"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'BasicCalculator

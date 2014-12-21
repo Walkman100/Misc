@@ -86,7 +86,7 @@ Partial Class Variables
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(100, 50)
         Me.btnExit.TabIndex = 4
-        Me.btnExit.Text = "Exit"
+        Me.btnExit.Text = "Close"
         Me.btnExit.UseVisualStyleBackColor = True
         '
         'Variables

@@ -325,7 +325,7 @@
     <value>7</value>
   </data>
   <data name="btnExit.Text" xml:space="preserve">
-    <value>Exit</value>
+    <value>Close</value>
   </data>
   <data name="&gt;&gt;btnExit.Name" xml:space="preserve">
     <value>btnExit</value>
