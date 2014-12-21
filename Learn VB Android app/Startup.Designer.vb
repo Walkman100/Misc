@@ -22,6 +22,7 @@ Partial Class Startup
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Startup))
         Me.btnArrays = New System.Windows.Forms.Button()
         Me.btnCalc = New System.Windows.Forms.Button()
         Me.btnCountsTotals = New System.Windows.Forms.Button()
@@ -41,7 +42,7 @@ Partial Class Startup
         Me.btnArrays.Location = New System.Drawing.Point(200, 41)
         Me.btnArrays.Name = "btnArrays"
         Me.btnArrays.Size = New System.Drawing.Size(88, 23)
-        Me.btnArrays.TabIndex = 0
+        Me.btnArrays.TabIndex = 9
         Me.btnArrays.Text = "Arrays"
         Me.btnArrays.UseVisualStyleBackColor = True
         '
@@ -68,7 +69,7 @@ Partial Class Startup
         Me.btnGitUpdater.Location = New System.Drawing.Point(294, 41)
         Me.btnGitUpdater.Name = "btnGitUpdater"
         Me.btnGitUpdater.Size = New System.Drawing.Size(88, 23)
-        Me.btnGitUpdater.TabIndex = 3
+        Me.btnGitUpdater.TabIndex = 10
         Me.btnGitUpdater.Text = "GitUpdater"
         Me.btnGitUpdater.UseVisualStyleBackColor = True
         '
@@ -77,7 +78,7 @@ Partial Class Startup
         Me.btnList.Location = New System.Drawing.Point(12, 41)
         Me.btnList.Name = "btnList"
         Me.btnList.Size = New System.Drawing.Size(88, 23)
-        Me.btnList.TabIndex = 4
+        Me.btnList.TabIndex = 7
         Me.btnList.Text = "ListBox"
         Me.btnList.UseVisualStyleBackColor = True
         '
@@ -86,7 +87,7 @@ Partial Class Startup
         Me.btnMaths.Location = New System.Drawing.Point(200, 12)
         Me.btnMaths.Name = "btnMaths"
         Me.btnMaths.Size = New System.Drawing.Size(88, 23)
-        Me.btnMaths.TabIndex = 5
+        Me.btnMaths.TabIndex = 3
         Me.btnMaths.Text = "Maths"
         Me.btnMaths.UseVisualStyleBackColor = True
         '
@@ -95,7 +96,7 @@ Partial Class Startup
         Me.btnTest.Location = New System.Drawing.Point(388, 41)
         Me.btnTest.Name = "btnTest"
         Me.btnTest.Size = New System.Drawing.Size(88, 23)
-        Me.btnTest.TabIndex = 6
+        Me.btnTest.TabIndex = 11
         Me.btnTest.Text = "Test"
         Me.btnTest.UseVisualStyleBackColor = True
         '
@@ -104,7 +105,7 @@ Partial Class Startup
         Me.btnVars.Location = New System.Drawing.Point(106, 41)
         Me.btnVars.Name = "btnVars"
         Me.btnVars.Size = New System.Drawing.Size(88, 23)
-        Me.btnVars.TabIndex = 7
+        Me.btnVars.TabIndex = 8
         Me.btnVars.Text = "Variables"
         Me.btnVars.UseVisualStyleBackColor = True
         '
@@ -113,7 +114,7 @@ Partial Class Startup
         Me.btnTime.Location = New System.Drawing.Point(294, 12)
         Me.btnTime.Name = "btnTime"
         Me.btnTime.Size = New System.Drawing.Size(88, 23)
-        Me.btnTime.TabIndex = 8
+        Me.btnTime.TabIndex = 4
         Me.btnTime.Text = "TimeConverter"
         Me.btnTime.UseVisualStyleBackColor = True
         '
@@ -122,7 +123,7 @@ Partial Class Startup
         Me.btnInserter.Location = New System.Drawing.Point(388, 12)
         Me.btnInserter.Name = "btnInserter"
         Me.btnInserter.Size = New System.Drawing.Size(88, 23)
-        Me.btnInserter.TabIndex = 9
+        Me.btnInserter.TabIndex = 5
         Me.btnInserter.Text = "NumberInserter"
         Me.btnInserter.UseVisualStyleBackColor = True
         '
@@ -131,16 +132,17 @@ Partial Class Startup
         Me.btnSteam.Location = New System.Drawing.Point(482, 12)
         Me.btnSteam.Name = "btnSteam"
         Me.btnSteam.Size = New System.Drawing.Size(88, 23)
-        Me.btnSteam.TabIndex = 10
+        Me.btnSteam.TabIndex = 6
         Me.btnSteam.Text = "SteamIDLinker"
         Me.btnSteam.UseVisualStyleBackColor = True
         '
         'btnExit
         '
+        Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.Location = New System.Drawing.Point(482, 41)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(88, 23)
-        Me.btnExit.TabIndex = 11
+        Me.btnExit.TabIndex = 12
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
         '
@@ -149,6 +151,7 @@ Partial Class Startup
         Me.AcceptButton = Me.btnMaths
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(583, 78)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnSteam)
@@ -163,8 +166,9 @@ Partial Class Startup
         Me.Controls.Add(Me.btnCalc)
         Me.Controls.Add(Me.btnArrays)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Startup"
-        Me.Text = "Startup"
+        Me.Text = "Select a form:"
         Me.ResumeLayout(False)
 
     End Sub

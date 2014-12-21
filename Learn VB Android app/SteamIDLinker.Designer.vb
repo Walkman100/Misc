@@ -50,6 +50,7 @@ Partial Class SteamIDLinker
         '
         'imgLoading
         '
+        Me.imgLoading.Image = CType(resources.GetObject("imgLoading.Image"), System.Drawing.Image)
         Me.imgLoading.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.imgLoading.Location = New System.Drawing.Point(12, 37)
         Me.imgLoading.Name = "imgLoading"
@@ -71,7 +72,7 @@ Partial Class SteamIDLinker
         '
         'imgGameImage
         '
-        Me.imgGameImage.Cursor = System.Windows.Forms.Cursors.Default
+        Me.imgGameImage.Cursor = System.Windows.Forms.Cursors.Hand
         Me.imgGameImage.ImageLocation = ""
         Me.imgGameImage.InitialImage = CType(resources.GetObject("imgGameImage.InitialImage"), System.Drawing.Image)
         Me.imgGameImage.Location = New System.Drawing.Point(12, 89)
@@ -127,6 +128,7 @@ Partial Class SteamIDLinker
         Me.WebBrowserGamePage.Location = New System.Drawing.Point(12, 310)
         Me.WebBrowserGamePage.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowserGamePage.Name = "WebBrowserGamePage"
+        Me.WebBrowserGamePage.ScriptErrorsSuppressed = True
         Me.WebBrowserGamePage.Size = New System.Drawing.Size(461, 377)
         Me.WebBrowserGamePage.TabIndex = 53
         '
@@ -144,6 +146,7 @@ Partial Class SteamIDLinker
         Me.Controls.Add(Me.imgLoading)
         Me.Controls.Add(Me.lblGameName)
         Me.Controls.Add(Me.imgGameImage)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "SteamIDLinker"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SteamIDLinker"
