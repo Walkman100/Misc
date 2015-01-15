@@ -1,8 +1,8 @@
 @echo off
 color 0A
 cd %~dp0
-xcopy "install-data\sudo.cmd" "%windir%\system32"
-xcopy "install-data\sudoRED.cmd" "%windir%\system32"
-"install-data\Context menu item Combined.reg"
+xcopy "sudo.cmd" "%windir%"
+xcopy "sudoRED.cmd" "%windir%"
+"ShellItem.reg"
 echo Install Complete!
 pause

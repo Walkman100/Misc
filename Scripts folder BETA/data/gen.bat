@@ -1,8 +1,8 @@
 @echo off
 color 0A
 cd %~dp0
-xcopy "install-data\sudo.cmd" "%windir%\system32"
-xcopy "install-data\sudoRED.cmd" "%windir%\system32"
+xcopy "sudo.cmd" "%windir%"
+xcopy "sudoRED.cmd" "%windir%"
 echo Copying CMD files done, starting registry key generating...
 
 @echo Windows Registry Editor Version 5.00 > %temp%\REDContext.reg
