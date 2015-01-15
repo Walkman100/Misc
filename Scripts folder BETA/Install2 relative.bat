@@ -12,7 +12,7 @@ echo Copying CMD files done, starting registry key generating...
 @echo "Icon"="%ProgramFiles%\\Remove Empty Directories\\RED2.exe" >> %temp%\REDContext.reg
 @echo. >> %temp%\REDContext.reg
 @echo [HKEY_CLASSES_ROOT\Folder\shell\Remove empty dirs\command] >> %temp%\REDContext.reg
-@echo @="%ProgramFiles%\\Remove Empty Directories\\RED2.exe \"%1\"" >> %temp%\REDContext.reg
+@echo @="%ProgramFiles%\\Remove Empty Directories\\RED2.exe \"%%1\"" >> %temp%\REDContext.reg
 @echo. >> %temp%\REDContext.reg
 @echo [HKEY_CLASSES_ROOT\Folder\shell\Remove empty dirs (ADMIN)] >> %temp%\REDContext.reg
 @echo @="Remove empty dirs (ADMIN)" >> %temp%\REDContext.reg
@@ -22,6 +22,6 @@ echo Copying CMD files done, starting registry key generating...
 @echo [HKEY_CLASSES_ROOT\Folder\shell\Remove empty dirs (ADMIN)\command] >> %temp%\REDContext.reg
 @echo @="sudoRED \"%%1\"" >> %temp%\REDContext.reg
 
-echo Copying registry code done, attempting to merge...
+echo Generating registry keys done, attempting to merge...
 %temp%\REDContext.reg
 pause
