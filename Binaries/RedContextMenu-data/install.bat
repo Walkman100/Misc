@@ -1,8 +1,14 @@
 @echo off
 color 0A
-cd %~dp0
+cd /d %~dp0
+echo Copying CMD files...
 xcopy "..\sudo.cmd" "%windir%"
 xcopy "..\sudoRED.cmd" "%windir%"
-"ShellItem.reg"
+echo Copying CMD files done.
+echo.
+
+gen.bat
+
 echo Install Complete!
+
 pause
