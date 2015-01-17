@@ -81,12 +81,18 @@ FunctionEnd
 ; Uninstaller
 
 Section "Uninstall"
-  Delete "$INSTDIR\Sudo Scripts-Uninst.exe"   ; Remove Application Files
+  Delete "$INSTDIR\SudoScripts-Uninst.exe"   ; Remove Application Files
+  Delete "$INSTDIR\sudo.cmd"
+  Delete "$INSTDIR\sudoGUI.cmd"
+  Delete "$INSTDIR\SudoCMD.exe"
+  Delete "$INSTDIR\SudoGUI.exe"
+  Delete "$INSTDIR\sudoRED.cmd"
   Delete "$INSTDIR\Sudo Scripts.exe"
-  
-  Delete "$SMPROGRAMS\DeavmiOSS\Sudo Scripts Options.lnk"   ; Remove Start Menu Shortcuts & Folder
-  Delete "$SMPROGRAMS\DeavmiOSS\Uninstall Sudo Scripts.lnk"
-  RMDir $SMPROGRAMS\DeavmiOSS
+  Delete "$INSTDIR\Sudo Scripts.exe"
+  Delete "$INSTDIR\Sudo Scripts.exe"
+  Delete "$INSTDIR\Sudo Scripts.exe"
+  Delete "$TEMP\gen.bat"
+  DeleteRegKey HKCR "Folder\shell\Remove empty dirs (ADMIN)"
 SectionEnd
 
 ; Uninstaller Functions
