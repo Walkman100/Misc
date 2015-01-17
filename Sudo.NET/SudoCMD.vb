@@ -11,7 +11,7 @@
                 ProgramToLaunch = s
                 isFirst = False
             Else
-                args = args & s
+                args = args & " " & s
             End If
         Next
 

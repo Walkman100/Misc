@@ -22,25 +22,25 @@ Partial Class SudoGUI
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'SudoGUI
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1, 1)
-        Me.ControlBox = False
+        Me.ControlBox = false
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.MaximizeBox = False
-        Me.MinimizeBox = False
+        Me.MaximizeBox = false
+        Me.MinimizeBox = false
         Me.Name = "SudoGUI"
-        Me.ShowIcon = False
-        Me.ShowInTaskbar = False
+        Me.ShowIcon = false
+        Me.ShowInTaskbar = false
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide
         Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "SudoGUI"
-        Me.ResumeLayout(False)
-
+        Me.WindowState = System.Windows.Forms.FormWindowState.Minimized
+        Me.ResumeLayout(false)
     End Sub
 
 End Class
