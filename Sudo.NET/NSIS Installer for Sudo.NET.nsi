@@ -53,12 +53,18 @@ Section "Copy SudoGUI.exe to WinDir"
   File "..\Binaries\SudoGUI.exe"
 SectionEnd
 
-Section "Install Red Context Menu"
+Section "Install RED Admin Context Menu"
+  
+  ; Copy command
   SetOutPath $INSTDIR
   File "..\Binaries\sudoRED.cmd"
-  SetOutPath $TEMP
-  File "..\Binaries\RedContextMenu-data\gen.bat"
-  ExecWait '$TEMP\gen.bat'
+  
+  ; Link to it in registry
+  WriteRegStr HKCR "Folder\shell\Remove empty dirs (ADMIN)" "" "Remove empty dirs (ADMIN)"
+  WriteRegStr HKCR "Folder\shell\Remove empty dirs (ADMIN)" "Icon" "$PROGRAMFILES\Remove Empty Directories\RED2.exe"
+  WriteRegStr HKCR "Folder\shell\Remove empty dirs (ADMIN)" "HasLUAShield" ""
+  ; Above is what the item is called and it's icon, below is what is run on click:
+  WriteRegStr HKCR "Folder\shell\Remove empty dirs (ADMIN)\command" "" "sudoRED $\"%1$\""
 SectionEnd
 
 ; Functions
@@ -87,11 +93,6 @@ Section "Uninstall"
   Delete "$INSTDIR\SudoCMD.exe"
   Delete "$INSTDIR\SudoGUI.exe"
   Delete "$INSTDIR\sudoRED.cmd"
-  Delete "$INSTDIR\Sudo Scripts.exe"
-  Delete "$INSTDIR\Sudo Scripts.exe"
-  Delete "$INSTDIR\Sudo Scripts.exe"
-  Delete "$INSTDIR\Sudo Scripts.exe"
-  Delete "$TEMP\gen.bat"
   DeleteRegKey HKCR "Folder\shell\Remove empty dirs (ADMIN)"
 SectionEnd
 
