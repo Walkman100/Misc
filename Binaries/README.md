@@ -14,3 +14,5 @@ This file is part of the `InstallRedContextMenu` script - run `InstallRedContext
 
 ## SudoCMD.exe & SudoGUI.exe
 These are very simple programs that I made myself, you can view the source [here](https://github.com/Walkman100/Misc/tree/master/Sudo.NET). As you can see in the [SudoCMD.vb](https://github.com/Walkman100/Misc/blob/master/Sudo.NET/SudoCMD.vb) file, the code is almost exactly the same (since the `sudo.cmd` file uses `VBS` - `Visual Basic Script`, and these projects are written in `VB.Net` - `Visual Basic in Microsoft Net`). Build status of current source code: [![Build status](https://ci.appveyor.com/api/projects/status/6ptclhrdhs1e5c8c)](https://ci.appveyor.com/project/Walkman100/misc-847)
+
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Walkman100/Walkman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
