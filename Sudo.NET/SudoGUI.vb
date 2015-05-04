@@ -3,8 +3,6 @@
     Dim ProgramToLaunch As String = ""
     Dim args As String = ""
 
-    Dim objShell As Object = CreateObject("Shell.Application")
-
     Private Sub Sudo_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         For Each s As String In My.Application.CommandLineArgs
             If isFirst Then
@@ -15,7 +13,7 @@
             End If
         Next
 
-        objShell.ShellExecute(ProgramToLaunch, args, "", "runas")
+        CreateObject("Shell.Application").ShellExecute(ProgramToLaunch, args, "", "runas")
 
         Do Until 0 <> 0
             Application.Exit()

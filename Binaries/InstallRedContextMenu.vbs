@@ -1,2 +1,1 @@
-Set objShell = CreateObject("Shell.Application") 
-objShell.ShellExecute "RedContextMenu-data\install.bat", "", "", "runas" 
+CreateObject("Shell.Application").ShellExecute "RedContextMenu-data\install.bat", "", "", "runas" 
