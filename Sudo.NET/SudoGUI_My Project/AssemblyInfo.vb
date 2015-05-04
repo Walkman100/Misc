@@ -10,7 +10,7 @@ Imports System.Runtime.InteropServices
 
 <Assembly: AssemblyTitle("Sudo.NET GUI")> 
 <Assembly: AssemblyDescription("")> 
-<Assembly: AssemblyCompany("DeavmiOSS")> 
+<Assembly: AssemblyCompany("WalkmanOSS")> 
 <Assembly: AssemblyProduct("Sudo.NET GUI")> 
 <Assembly: AssemblyCopyright("FOSS from Walkman 2015")> 
 <Assembly: AssemblyTrademark("")> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' by using the '*' as shown below:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("1.0.1.0")> 
-<Assembly: AssemblyFileVersion("1.0.1.0")> 
+<Assembly: AssemblyVersion("1.0.2.0")> 
+<Assembly: AssemblyFileVersion("1.0.2.0")> 
