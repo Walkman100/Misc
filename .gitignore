@@ -43,8 +43,8 @@ local.properties
 
 # Build results
 
-[Dd]ebug/
-[Rr]elease/
+*[Dd]ebug/
+*[Rr]elease/
 x64/
 build/
 [Bb]in/
@@ -209,10 +209,12 @@ pip-log.txt
 .coverage
 .tox
 
-#Translations
+# Translations
 *.mo
 
-#Mr Developer
+# Mr Developer
 .mr.developer.cfg
+
+# Repo-specific entries
 Binaries/SudoCMD.xml
 Binaries/SudoGUI.xml
