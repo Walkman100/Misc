@@ -11,38 +11,38 @@
             Case 0 ' H:M:S -> S
                 ConvertNumber = txtIn.Text.Remove(txtIn.Text.IndexOf(":"))
                 ConvertNumber = ConvertNumber * 3600
-                tmpIn = txtIn.Text.Remove(0, txtIn.Text.IndexOf(":") + 1)
+                tmpIn = txtIn.Text.Substring(txtIn.Text.IndexOf(":") + 1)
                 tmpIn = tmpIn.Remove(tmpIn.IndexOf(":"))
                 ConvertNumber = ConvertNumber + tmpIn * 60
-                ConvertNumber = ConvertNumber + txtIn.Text.Remove(0, txtIn.Text.LastIndexOf(":") + 1)
+                ConvertNumber = ConvertNumber + txtIn.Text.Substring(txtIn.Text.LastIndexOf(":") + 1)
                 txtOut.Text = ConvertNumber
             Case 1 ' H:M:S -> M
                 ConvertNumber = txtIn.Text.Remove(txtIn.Text.IndexOf(":"))
                 ConvertNumber = ConvertNumber * 60
-                tmpIn = txtIn.Text.Remove(0, txtIn.Text.IndexOf(":") + 1)
+                tmpIn = txtIn.Text.Substring(txtIn.Text.IndexOf(":") + 1)
                 tmpIn = tmpIn.Remove(tmpIn.IndexOf(":"))
                 ConvertNumber = ConvertNumber + tmpIn
-                ConvertNumber = ConvertNumber + (txtIn.Text.Remove(0, txtIn.Text.LastIndexOf(":") + 1) / 60)
+                ConvertNumber = ConvertNumber + (txtIn.Text.Substring(txtIn.Text.LastIndexOf(":") + 1) / 60)
                 txtOut.Text = ConvertNumber
             Case 2 ' H:M:S -> H
                 ConvertNumber = txtIn.Text.Remove(txtIn.Text.IndexOf(":"))
-                tmpIn = txtIn.Text.Remove(0, txtIn.Text.IndexOf(":") + 1)
+                tmpIn = txtIn.Text.Substring(txtIn.Text.IndexOf(":") + 1)
                 tmpIn = tmpIn.Remove(tmpIn.IndexOf(":"))
                 ConvertNumber = ConvertNumber + (tmpIn / 60)
-                ConvertNumber = ConvertNumber + (txtIn.Text.Remove(0, txtIn.Text.LastIndexOf(":") + 1) / 3600)
+                ConvertNumber = ConvertNumber + (txtIn.Text.Substring(txtIn.Text.LastIndexOf(":") + 1) / 3600)
                 txtOut.Text = ConvertNumber
             Case 3 ' M:S -> S
                 ConvertNumber = txtIn.Text.Remove(txtIn.Text.IndexOf(":"))
                 ConvertNumber = ConvertNumber * 60
-                ConvertNumber = ConvertNumber + txtIn.Text.Remove(0, txtIn.Text.LastIndexOf(":") + 1)
+                ConvertNumber = ConvertNumber + txtIn.Text.Substring(txtIn.Text.LastIndexOf(":") + 1)
                 txtOut.Text = ConvertNumber
             Case 4 ' M:S -> M
                 ConvertNumber = txtIn.Text.Remove(txtIn.Text.IndexOf(":"))
-                ConvertNumber = ConvertNumber + (txtIn.Text.Remove(0, txtIn.Text.LastIndexOf(":") + 1) / 60)
+                ConvertNumber = ConvertNumber + (txtIn.Text.Substring(txtIn.Text.LastIndexOf(":") + 1) / 60)
                 txtOut.Text = ConvertNumber
             Case 5 ' M:S -> H
                 ConvertNumber = (txtIn.Text.Remove(txtIn.Text.IndexOf(":")) / 60)
-                ConvertNumber = ConvertNumber + (txtIn.Text.Remove(0, txtIn.Text.LastIndexOf(":") + 1) / 3600)
+                ConvertNumber = ConvertNumber + (txtIn.Text.Substring(txtIn.Text.LastIndexOf(":") + 1) / 3600)
                 txtOut.Text = ConvertNumber
             Case 6 ' S -> S
                 txtOut.Text = txtIn.Text
