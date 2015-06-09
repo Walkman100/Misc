@@ -30,6 +30,9 @@ Partial Class TimeConverter
         Me.btnConvert = New System.Windows.Forms.Button()
         Me.btnAutoConvert = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
+        Me.statusStrip = New System.Windows.Forms.StatusStrip()
+        Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
+        Me.statusStrip.SuspendLayout
         Me.SuspendLayout()
         '
         'lblIn
@@ -104,11 +107,27 @@ Partial Class TimeConverter
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
+        'statusStrip
+        '
+        Me.statusStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.statusLabel})
+        Me.statusStrip.Location = New System.Drawing.Point(0, 76)
+        Me.statusStrip.Name = "statusStrip"
+        Me.statusStrip.Size = New System.Drawing.Size(377, 22)
+        Me.statusStrip.TabIndex = 20
+        Me.statusStrip.Text = "statusStrip1"
+        '
+        'statusLabel
+        '
+        Me.statusLabel.Name = "statusLabel"
+        Me.statusLabel.Size = New System.Drawing.Size(43, 17)
+        Me.statusLabel.Text = "Ready"
+        '
         'TimeConverter
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(377, 85)
+        Me.ClientSize = New System.Drawing.Size(377, 98)
+        Me.Controls.Add(Me.statusStrip)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.lblIn)
         Me.Controls.Add(Me.txtIn)
@@ -120,10 +139,14 @@ Partial Class TimeConverter
         Me.Name = "TimeConverter"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TimeConverter"
+        Me.statusStrip.ResumeLayout(false)
+        Me.statusStrip.PerformLayout
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
+    Private statusLabel As System.Windows.Forms.ToolStripStatusLabel
+    Private statusStrip As System.Windows.Forms.StatusStrip
     Friend WithEvents lblIn As System.Windows.Forms.Label
     Friend WithEvents txtIn As System.Windows.Forms.TextBox
     Friend WithEvents txtOut As System.Windows.Forms.TextBox
