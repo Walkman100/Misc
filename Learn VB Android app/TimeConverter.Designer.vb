@@ -33,11 +33,11 @@ Partial Class TimeConverter
         Me.statusStrip = New System.Windows.Forms.StatusStrip()
         Me.statusLabel = New System.Windows.Forms.ToolStripStatusLabel()
         Me.statusStrip.SuspendLayout
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'lblIn
         '
-        Me.lblIn.AutoSize = True
+        Me.lblIn.AutoSize = true
         Me.lblIn.Location = New System.Drawing.Point(12, 9)
         Me.lblIn.Name = "lblIn"
         Me.lblIn.Size = New System.Drawing.Size(34, 13)
@@ -54,7 +54,7 @@ Partial Class TimeConverter
         'txtOut
         '
         Me.txtOut.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+            Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtOut.Location = New System.Drawing.Point(228, 25)
         Me.txtOut.Name = "txtOut"
         Me.txtOut.Size = New System.Drawing.Size(137, 20)
@@ -62,7 +62,7 @@ Partial Class TimeConverter
         '
         'lblOut
         '
-        Me.lblOut.AutoSize = True
+        Me.lblOut.AutoSize = true
         Me.lblOut.Location = New System.Drawing.Point(227, 9)
         Me.lblOut.Name = "lblOut"
         Me.lblOut.Size = New System.Drawing.Size(42, 13)
@@ -72,7 +72,7 @@ Partial Class TimeConverter
         'cbConvertType
         '
         Me.cbConvertType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cbConvertType.FormattingEnabled = True
+        Me.cbConvertType.FormattingEnabled = true
         Me.cbConvertType.Items.AddRange(New Object() {"H:M:S -> S", "H:M:S -> M", "H:M:S -> H", "M:S -> S", "M:S -> M", "M:S -> H", "S -> S", "S -> M", "S -> H"})
         Me.cbConvertType.Location = New System.Drawing.Point(118, 25)
         Me.cbConvertType.Name = "cbConvertType"
@@ -86,17 +86,17 @@ Partial Class TimeConverter
         Me.btnConvert.Size = New System.Drawing.Size(75, 23)
         Me.btnConvert.TabIndex = 17
         Me.btnConvert.Text = "Convert"
-        Me.btnConvert.UseVisualStyleBackColor = True
+        Me.btnConvert.UseVisualStyleBackColor = true
         '
         'btnAutoConvert
         '
-        Me.btnAutoConvert.AutoSize = True
-        Me.btnAutoConvert.Location = New System.Drawing.Point(12, 51)
+        Me.btnAutoConvert.AutoSize = true
+        Me.btnAutoConvert.Location = New System.Drawing.Point(12, 50)
         Me.btnAutoConvert.Name = "btnAutoConvert"
         Me.btnAutoConvert.Size = New System.Drawing.Size(192, 23)
         Me.btnAutoConvert.TabIndex = 18
         Me.btnAutoConvert.Text = "Get clipboard text, convert then copy"
-        Me.btnAutoConvert.UseVisualStyleBackColor = True
+        Me.btnAutoConvert.UseVisualStyleBackColor = true
         '
         'btnClose
         '
@@ -105,7 +105,7 @@ Partial Class TimeConverter
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 19
         Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.btnClose.UseVisualStyleBackColor = true
         '
         'statusStrip
         '
@@ -124,7 +124,7 @@ Partial Class TimeConverter
         '
         'TimeConverter
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(377, 98)
         Me.Controls.Add(Me.statusStrip)
@@ -141,9 +141,8 @@ Partial Class TimeConverter
         Me.Text = "TimeConverter"
         Me.statusStrip.ResumeLayout(false)
         Me.statusStrip.PerformLayout
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Me.ResumeLayout(false)
+        Me.PerformLayout
     End Sub
     Private statusLabel As System.Windows.Forms.ToolStripStatusLabel
     Private statusStrip As System.Windows.Forms.StatusStrip
