@@ -172,17 +172,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Arrays.resx">
-      <DependentUpon>Arrays.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="BasicCalculator.resx">
       <DependentUpon>BasicCalculator.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Counts+Totals.resx">
-      <DependentUpon>Counts+Totals.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GitUpdater.resx">
-      <DependentUpon>GitUpdater.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ListBox.resx">
       <DependentUpon>ListBox.vb</DependentUpon>
@@ -196,23 +187,11 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="NumberInserter.resx">
-      <DependentUpon>NumberInserter.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Startup.resx">
       <DependentUpon>Startup.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SteamIDLinker.resx">
       <DependentUpon>SteamIDLinker.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Test.resx">
-      <DependentUpon>Test.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TimeConverter.resx">
-      <DependentUpon>TimeConverter.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Variables.resx">
-      <DependentUpon>Variables.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
