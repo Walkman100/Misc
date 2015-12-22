@@ -22,18 +22,29 @@ Partial Class Arrays
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.SuspendLayout()
+        Me.btnCrash = New System.Windows.Forms.Button()
+        Me.SuspendLayout
+        '
+        'btnCrash
+        '
+        Me.btnCrash.Location = New System.Drawing.Point(12, 12)
+        Me.btnCrash.Name = "btnCrash"
+        Me.btnCrash.Size = New System.Drawing.Size(75, 23)
+        Me.btnCrash.TabIndex = 0
+        Me.btnCrash.Text = "Crash"
+        Me.btnCrash.UseVisualStyleBackColor = true
         '
         'Arrays
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(645, 476)
-        Me.KeyPreview = True
+        Me.Controls.Add(Me.btnCrash)
+        Me.KeyPreview = true
         Me.Name = "Arrays"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Arrays"
-        Me.ResumeLayout(False)
-
+        Me.ResumeLayout(false)
     End Sub
+    Private WithEvents btnCrash As System.Windows.Forms.Button
 End Class
