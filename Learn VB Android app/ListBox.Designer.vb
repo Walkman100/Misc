@@ -22,7 +22,6 @@ Partial Class ListBox
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ListBox))
         Me.lstList = New System.Windows.Forms.ListBox()
         Me.btnMoveNameOut = New System.Windows.Forms.Button()
         Me.btnMoveNameIn = New System.Windows.Forms.Button()
@@ -35,84 +34,137 @@ Partial Class ListBox
         Me.txtOut = New System.Windows.Forms.TextBox()
         Me.lblIn = New System.Windows.Forms.Label()
         Me.lblOut = New System.Windows.Forms.Label()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'lstList
         '
-        resources.ApplyResources(Me.lstList, "lstList")
-        Me.lstList.FormattingEnabled = True
+        Me.lstList.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom)  _
+                        Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lstList.FormattingEnabled = true
+        Me.lstList.Location = New System.Drawing.Point(12, 12)
         Me.lstList.Name = "lstList"
+        Me.lstList.Size = New System.Drawing.Size(120, 95)
+        Me.lstList.TabIndex = 0
         '
         'btnMoveNameOut
         '
-        resources.ApplyResources(Me.btnMoveNameOut, "btnMoveNameOut")
+        Me.btnMoveNameOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.btnMoveNameOut.Location = New System.Drawing.Point(138, 12)
         Me.btnMoveNameOut.Name = "btnMoveNameOut"
-        Me.btnMoveNameOut.UseVisualStyleBackColor = True
+        Me.btnMoveNameOut.Size = New System.Drawing.Size(120, 40)
+        Me.btnMoveNameOut.TabIndex = 1
+        Me.btnMoveNameOut.Text = "Move Name Out"
+        Me.btnMoveNameOut.UseVisualStyleBackColor = true
         '
         'btnMoveNameIn
         '
-        resources.ApplyResources(Me.btnMoveNameIn, "btnMoveNameIn")
+        Me.btnMoveNameIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.btnMoveNameIn.Location = New System.Drawing.Point(138, 67)
         Me.btnMoveNameIn.Name = "btnMoveNameIn"
-        Me.btnMoveNameIn.UseVisualStyleBackColor = True
+        Me.btnMoveNameIn.Size = New System.Drawing.Size(120, 40)
+        Me.btnMoveNameIn.TabIndex = 2
+        Me.btnMoveNameIn.Text = "Move Name In"
+        Me.btnMoveNameIn.UseVisualStyleBackColor = true
         '
         'btnFillList
         '
-        resources.ApplyResources(Me.btnFillList, "btnFillList")
+        Me.btnFillList.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnFillList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnFillList.Location = New System.Drawing.Point(12, 113)
         Me.btnFillList.Name = "btnFillList"
-        Me.btnFillList.UseVisualStyleBackColor = True
+        Me.btnFillList.Size = New System.Drawing.Size(120, 40)
+        Me.btnFillList.TabIndex = 3
+        Me.btnFillList.Text = "Fill This List"
+        Me.btnFillList.UseVisualStyleBackColor = true
         '
         'btnDeleteItem
         '
-        resources.ApplyResources(Me.btnDeleteItem, "btnDeleteItem")
+        Me.btnDeleteItem.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.btnDeleteItem.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnDeleteItem.Location = New System.Drawing.Point(138, 113)
         Me.btnDeleteItem.Name = "btnDeleteItem"
-        Me.btnDeleteItem.UseVisualStyleBackColor = True
+        Me.btnDeleteItem.Size = New System.Drawing.Size(120, 40)
+        Me.btnDeleteItem.TabIndex = 4
+        Me.btnDeleteItem.Text = "Delete Item"
+        Me.btnDeleteItem.UseVisualStyleBackColor = true
         '
         'btnShowIndex
         '
-        resources.ApplyResources(Me.btnShowIndex, "btnShowIndex")
+        Me.btnShowIndex.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.btnShowIndex.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
+        Me.btnShowIndex.Location = New System.Drawing.Point(12, 159)
         Me.btnShowIndex.Name = "btnShowIndex"
-        Me.btnShowIndex.UseVisualStyleBackColor = True
+        Me.btnShowIndex.Size = New System.Drawing.Size(120, 40)
+        Me.btnShowIndex.TabIndex = 5
+        Me.btnShowIndex.Text = "Show List Index"
+        Me.btnShowIndex.UseVisualStyleBackColor = true
         '
         'btnClear
         '
-        resources.ApplyResources(Me.btnClear, "btnClear")
+        Me.btnClear.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.btnClear.Location = New System.Drawing.Point(138, 159)
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.UseVisualStyleBackColor = True
+        Me.btnClear.Size = New System.Drawing.Size(120, 40)
+        Me.btnClear.TabIndex = 6
+        Me.btnClear.Text = "Clear List"
+        Me.btnClear.UseVisualStyleBackColor = true
         '
         'btnExit
         '
-        resources.ApplyResources(Me.btnExit, "btnExit")
+        Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.btnExit.Location = New System.Drawing.Point(264, 159)
         Me.btnExit.Name = "btnExit"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.Size = New System.Drawing.Size(120, 40)
+        Me.btnExit.TabIndex = 7
+        Me.btnExit.Text = "Close"
+        Me.btnExit.UseVisualStyleBackColor = true
         '
         'txtIn
         '
-        resources.ApplyResources(Me.txtIn, "txtIn")
+        Me.txtIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtIn.Location = New System.Drawing.Point(264, 87)
         Me.txtIn.Name = "txtIn"
+        Me.txtIn.Size = New System.Drawing.Size(120, 20)
+        Me.txtIn.TabIndex = 8
         '
         'txtOut
         '
-        resources.ApplyResources(Me.txtOut, "txtOut")
+        Me.txtOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtOut.Location = New System.Drawing.Point(264, 32)
         Me.txtOut.Name = "txtOut"
+        Me.txtOut.Size = New System.Drawing.Size(120, 20)
+        Me.txtOut.TabIndex = 9
         '
         'lblIn
         '
-        resources.ApplyResources(Me.lblIn, "lblIn")
+        Me.lblIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblIn.Location = New System.Drawing.Point(264, 67)
         Me.lblIn.Name = "lblIn"
+        Me.lblIn.Size = New System.Drawing.Size(120, 17)
+        Me.lblIn.TabIndex = 10
+        Me.lblIn.Text = "Name In"
+        Me.lblIn.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
         'lblOut
         '
-        resources.ApplyResources(Me.lblOut, "lblOut")
+        Me.lblOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblOut.Location = New System.Drawing.Point(264, 12)
         Me.lblOut.Name = "lblOut"
+        Me.lblOut.Size = New System.Drawing.Size(120, 17)
+        Me.lblOut.TabIndex = 11
+        Me.lblOut.Text = "Name Out"
+        Me.lblOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter
         '
         'ListBox
         '
         Me.AcceptButton = Me.btnMoveNameIn
-        resources.ApplyResources(Me, "$this")
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
+        Me.ClientSize = New System.Drawing.Size(396, 212)
         Me.Controls.Add(Me.lblOut)
         Me.Controls.Add(Me.lblIn)
         Me.Controls.Add(Me.txtOut)
@@ -125,13 +177,14 @@ Partial Class ListBox
         Me.Controls.Add(Me.btnMoveNameIn)
         Me.Controls.Add(Me.btnMoveNameOut)
         Me.Controls.Add(Me.lstList)
-        Me.HelpButton = True
-        Me.KeyPreview = True
+        Me.HelpButton = true
+        Me.KeyPreview = true
         Me.Name = "ListBox"
         Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
+        Me.Text = "List Box"
+        Me.ResumeLayout(false)
+        Me.PerformLayout
     End Sub
     Friend WithEvents lstList As System.Windows.Forms.ListBox
     Friend WithEvents btnMoveNameOut As System.Windows.Forms.Button

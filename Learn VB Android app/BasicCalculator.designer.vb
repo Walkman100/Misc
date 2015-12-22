@@ -22,7 +22,6 @@ Partial Class BasicCalculator
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(BasicCalculator))
         Me.txtInOne = New System.Windows.Forms.TextBox()
         Me.lblOp = New System.Windows.Forms.Label()
         Me.txtInTwo = New System.Windows.Forms.TextBox()
@@ -33,7 +32,7 @@ Partial Class BasicCalculator
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnSubtract = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'txtInOne
         '
@@ -44,7 +43,7 @@ Partial Class BasicCalculator
         '
         'lblOp
         '
-        Me.lblOp.AutoSize = True
+        Me.lblOp.AutoSize = true
         Me.lblOp.Location = New System.Drawing.Point(118, 15)
         Me.lblOp.Name = "lblOp"
         Me.lblOp.Size = New System.Drawing.Size(10, 13)
@@ -60,7 +59,7 @@ Partial Class BasicCalculator
         '
         'txtEquals
         '
-        Me.txtEquals.AutoSize = True
+        Me.txtEquals.AutoSize = true
         Me.txtEquals.Location = New System.Drawing.Point(240, 15)
         Me.txtEquals.Name = "txtEquals"
         Me.txtEquals.Size = New System.Drawing.Size(13, 13)
@@ -81,7 +80,7 @@ Partial Class BasicCalculator
         Me.btnDivide.Size = New System.Drawing.Size(75, 23)
         Me.btnDivide.TabIndex = 5
         Me.btnDivide.Text = "/"
-        Me.btnDivide.UseVisualStyleBackColor = True
+        Me.btnDivide.UseVisualStyleBackColor = true
         '
         'btnMultiply
         '
@@ -90,7 +89,7 @@ Partial Class BasicCalculator
         Me.btnMultiply.Size = New System.Drawing.Size(75, 23)
         Me.btnMultiply.TabIndex = 6
         Me.btnMultiply.Text = "*"
-        Me.btnMultiply.UseVisualStyleBackColor = True
+        Me.btnMultiply.UseVisualStyleBackColor = true
         '
         'btnAdd
         '
@@ -99,7 +98,7 @@ Partial Class BasicCalculator
         Me.btnAdd.Size = New System.Drawing.Size(75, 23)
         Me.btnAdd.TabIndex = 7
         Me.btnAdd.Text = "+"
-        Me.btnAdd.UseVisualStyleBackColor = True
+        Me.btnAdd.UseVisualStyleBackColor = true
         '
         'btnSubtract
         '
@@ -108,7 +107,7 @@ Partial Class BasicCalculator
         Me.btnSubtract.Size = New System.Drawing.Size(75, 23)
         Me.btnSubtract.TabIndex = 8
         Me.btnSubtract.Text = "-"
-        Me.btnSubtract.UseVisualStyleBackColor = True
+        Me.btnSubtract.UseVisualStyleBackColor = true
         '
         'btnExit
         '
@@ -117,12 +116,12 @@ Partial Class BasicCalculator
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 9
         Me.btnExit.Text = "Close"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = true
         '
         'BasicCalculator
         '
-        Me.AllowDrop = True
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AllowDrop = true
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(371, 105)
         Me.Controls.Add(Me.btnExit)
@@ -136,13 +135,11 @@ Partial Class BasicCalculator
         Me.Controls.Add(Me.lblOp)
         Me.Controls.Add(Me.txtInOne)
         Me.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "BasicCalculator"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Calculator"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Me.ResumeLayout(false)
+        Me.PerformLayout
     End Sub
     Friend WithEvents txtInOne As System.Windows.Forms.TextBox
     Friend WithEvents lblOp As System.Windows.Forms.Label

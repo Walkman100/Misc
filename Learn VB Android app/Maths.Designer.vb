@@ -22,7 +22,6 @@ Partial Class Maths
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Maths))
         Me.txtNumber1 = New System.Windows.Forms.TextBox()
         Me.txtNumber2 = New System.Windows.Forms.TextBox()
         Me.txtNumber3 = New System.Windows.Forms.TextBox()
@@ -34,7 +33,7 @@ Partial Class Maths
         Me.lblFactor = New System.Windows.Forms.Label()
         Me.lblResult = New System.Windows.Forms.Label()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'txtNumber1
         '
@@ -66,8 +65,8 @@ Partial Class Maths
         '
         'txtResult1
         '
-        Me.txtResult1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtResult1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtResult1.Location = New System.Drawing.Point(228, 28)
         Me.txtResult1.Name = "txtResult1"
         Me.txtResult1.Size = New System.Drawing.Size(100, 20)
@@ -75,8 +74,8 @@ Partial Class Maths
         '
         'txtResult2
         '
-        Me.txtResult2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtResult2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtResult2.Location = New System.Drawing.Point(228, 54)
         Me.txtResult2.Name = "txtResult2"
         Me.txtResult2.Size = New System.Drawing.Size(100, 20)
@@ -84,8 +83,8 @@ Partial Class Maths
         '
         'txtResult3
         '
-        Me.txtResult3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.txtResult3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtResult3.Location = New System.Drawing.Point(228, 81)
         Me.txtResult3.Name = "txtResult3"
         Me.txtResult3.Size = New System.Drawing.Size(100, 20)
@@ -93,7 +92,7 @@ Partial Class Maths
         '
         'lblNumber
         '
-        Me.lblNumber.AutoSize = True
+        Me.lblNumber.AutoSize = true
         Me.lblNumber.Location = New System.Drawing.Point(12, 9)
         Me.lblNumber.Name = "lblNumber"
         Me.lblNumber.Size = New System.Drawing.Size(49, 13)
@@ -102,7 +101,7 @@ Partial Class Maths
         '
         'lblFactor
         '
-        Me.lblFactor.AutoSize = True
+        Me.lblFactor.AutoSize = true
         Me.lblFactor.Location = New System.Drawing.Point(120, 9)
         Me.lblFactor.Name = "lblFactor"
         Me.lblFactor.Size = New System.Drawing.Size(37, 13)
@@ -111,9 +110,9 @@ Partial Class Maths
         '
         'lblResult
         '
-        Me.lblResult.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblResult.AutoSize = True
+        Me.lblResult.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblResult.AutoSize = true
         Me.lblResult.Location = New System.Drawing.Point(227, 9)
         Me.lblResult.Name = "lblResult"
         Me.lblResult.Size = New System.Drawing.Size(37, 13)
@@ -122,19 +121,19 @@ Partial Class Maths
         '
         'btnExit
         '
-        Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnExit.AutoSize = True
+        Me.btnExit.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.btnExit.AutoSize = true
         Me.btnExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnExit.Location = New System.Drawing.Point(253, 108)
         Me.btnExit.Name = "btnExit"
         Me.btnExit.Size = New System.Drawing.Size(75, 23)
         Me.btnExit.TabIndex = 11
         Me.btnExit.Text = "Close"
-        Me.btnExit.UseVisualStyleBackColor = True
+        Me.btnExit.UseVisualStyleBackColor = true
         '
         'Maths
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(340, 143)
         Me.Controls.Add(Me.btnExit)
@@ -148,14 +147,12 @@ Partial Class Maths
         Me.Controls.Add(Me.txtNumber3)
         Me.Controls.Add(Me.txtNumber2)
         Me.Controls.Add(Me.txtNumber1)
-        Me.HelpButton = True
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.HelpButton = true
         Me.Name = "Maths"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Maths"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Me.ResumeLayout(false)
+        Me.PerformLayout
     End Sub
     Friend WithEvents txtNumber1 As System.Windows.Forms.TextBox
     Friend WithEvents txtNumber2 As System.Windows.Forms.TextBox
