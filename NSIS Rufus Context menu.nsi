@@ -26,11 +26,12 @@ Section "Add Rufus to context menu"
   Call nsDialogsPage
   WriteRegStr HKCR "Drive\shell\Rufus" "" "Format with Rufus..."
   WriteRegStr HKCR "Drive\shell\Rufus" "Icon" "$RufusPath"
+  WriteRegStr HKCR "Drive\shell\Rufus" "HasLuaShield" ""
   WriteRegStr HKCR "Drive\shell\Rufus\command" "" "$\"$RufusPath$\" $\"%1$\""
 SectionEnd
 
 Section /o "Remove Rufus from context menu"
-  DeleteRegKey HKCR "Folder\shell\Rufus"
+  DeleteRegKey HKCR "Drive\shell\Rufus"
 SectionEnd
 
 ; Functions
