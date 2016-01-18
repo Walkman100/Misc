@@ -31,7 +31,7 @@ Section "Add Rufus to context menu"
 SectionEnd
 
 Section /o "Remove Rufus from context menu"
-  DeleteRegKey HKCR "Folder\shell\DirImage"
+  DeleteRegKey HKCR "Folder\shell\Rufus"
 SectionEnd
 
 ; Functions
