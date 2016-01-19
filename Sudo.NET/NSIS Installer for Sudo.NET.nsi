@@ -5,6 +5,7 @@
 Icon "ImageRes(#68).ico"
 Caption "Sudo Scripts Installer"
 Name "Sudo Scripts"
+XPStyle on
 AutoCloseWindow true
 ShowInstDetails show
 
