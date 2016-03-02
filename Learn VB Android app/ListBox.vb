@@ -50,15 +50,17 @@
         lstList.Items.Clear()
     End Sub
     
+    Dim selectFile As New OpenFileDialog
     Private Sub btnFile_Click(sender As Object, e As EventArgs) Handles btnFile.Click
-        Dim selectFile As New OpenFileDialog
         selectFile.Title = "Select a file to load:"
         selectFile.DefaultExt = ".txt"
-        selectFile.Filter = "*.txt|*.txt|All Files|*.*"
+        selectFile.Filter = "Text files|*.txt; *.text|All Files|*.*"
         selectFile.ReadOnlyChecked = True
-        selectFile.InitialDirectory = Application.StartupPath
+        If selectFile.InitialDirectory = "" Then selectFile.InitialDirectory = Application.StartupPath
         If selectFile.ShowDialog() = DialogResult.OK Then
-            
+            For Each line As String In File.ReadAllLines(selectFile.FileName)
+                lstList.Items.Add(line)
+            Next
         End If
     End Sub
 
