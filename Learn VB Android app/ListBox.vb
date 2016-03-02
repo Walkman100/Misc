@@ -63,6 +63,19 @@
             Next
         End If
     End Sub
+    
+    Dim saveFile As New SaveFileDialog
+    Private Sub btnFile_MouseClick(sender As Object, e As MouseEventArgs) Handles btnFile.MouseDown
+        If e.Button = MouseButtons.Right Then
+            saveFile.Title = "Select where to save:"
+            saveFile.DefaultExt = ".txt"
+            saveFile.Filter = "Text files|*.txt; *.text|All Files|*.*"
+            saveFile.FileName = selectFile.FileName
+            If saveFile.ShowDialog() = DialogResult.OK Then
+                File.WriteAllLines(saveFile.FileName, lstList.Items.OfType(Of String)())
+            End If
+        End If
+    End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
         Me.Close()

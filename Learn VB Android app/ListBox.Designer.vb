@@ -167,7 +167,7 @@ Partial Class ListBox
         Me.btnFile.Name = "btnFile"
         Me.btnFile.Size = New System.Drawing.Size(120, 40)
         Me.btnFile.TabIndex = 12
-        Me.btnFile.Text = "Load from file..."
+        Me.btnFile.Text = "Load from file..."&Global.Microsoft.VisualBasic.ChrW(13)&Global.Microsoft.VisualBasic.ChrW(10)&"(Right-click to export)"
         Me.btnFile.UseVisualStyleBackColor = true
         '
         'ListBox
