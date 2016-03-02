@@ -34,6 +34,7 @@ Partial Class ListBox
         Me.txtOut = New System.Windows.Forms.TextBox()
         Me.lblIn = New System.Windows.Forms.Label()
         Me.lblOut = New System.Windows.Forms.Label()
+        Me.btnFile = New System.Windows.Forms.Button()
         Me.SuspendLayout
         '
         'lstList
@@ -49,7 +50,7 @@ Partial Class ListBox
         '
         'btnMoveNameOut
         '
-        Me.btnMoveNameOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.btnMoveNameOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.btnMoveNameOut.Location = New System.Drawing.Point(138, 12)
         Me.btnMoveNameOut.Name = "btnMoveNameOut"
         Me.btnMoveNameOut.Size = New System.Drawing.Size(120, 40)
@@ -69,7 +70,8 @@ Partial Class ListBox
         '
         'btnFillList
         '
-        Me.btnFillList.Anchor = System.Windows.Forms.AnchorStyles.Bottom
+        Me.btnFillList.Anchor = CType(((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left)  _
+                        Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.btnFillList.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.btnFillList.Location = New System.Drawing.Point(12, 113)
         Me.btnFillList.Name = "btnFillList"
@@ -132,7 +134,7 @@ Partial Class ListBox
         '
         'txtOut
         '
-        Me.txtOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.txtOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.txtOut.Location = New System.Drawing.Point(264, 32)
         Me.txtOut.Name = "txtOut"
         Me.txtOut.Size = New System.Drawing.Size(120, 20)
@@ -150,13 +152,22 @@ Partial Class ListBox
         '
         'lblOut
         '
-        Me.lblOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
+        Me.lblOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.lblOut.Location = New System.Drawing.Point(264, 12)
         Me.lblOut.Name = "lblOut"
         Me.lblOut.Size = New System.Drawing.Size(120, 17)
         Me.lblOut.TabIndex = 11
         Me.lblOut.Text = "Name Out"
         Me.lblOut.TextAlign = System.Drawing.ContentAlignment.BottomCenter
+        '
+        'btnFile
+        '
+        Me.btnFile.Location = New System.Drawing.Point(264, 113)
+        Me.btnFile.Name = "btnFile"
+        Me.btnFile.Size = New System.Drawing.Size(120, 40)
+        Me.btnFile.TabIndex = 12
+        Me.btnFile.Text = "Load from file..."
+        Me.btnFile.UseVisualStyleBackColor = true
         '
         'ListBox
         '
@@ -165,6 +176,7 @@ Partial Class ListBox
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(396, 212)
+        Me.Controls.Add(Me.btnFile)
         Me.Controls.Add(Me.lblOut)
         Me.Controls.Add(Me.lblIn)
         Me.Controls.Add(Me.txtOut)
@@ -186,6 +198,7 @@ Partial Class ListBox
         Me.ResumeLayout(false)
         Me.PerformLayout
     End Sub
+    Friend WithEvents btnFile As System.Windows.Forms.Button
     Friend WithEvents lstList As System.Windows.Forms.ListBox
     Friend WithEvents btnMoveNameOut As System.Windows.Forms.Button
     Friend WithEvents btnMoveNameIn As System.Windows.Forms.Button

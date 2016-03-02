@@ -1,5 +1,10 @@
 ﻿Public Class ListBox
-
+    
+    Private Sub lstList_DoubleClick(sender As Object, e As EventArgs) Handles lstList.DoubleClick
+        lstList.Sorted = True
+        lstList.Sorted = False
+    End Sub
+    
     Private Sub btnFillList_Click(sender As Object, e As EventArgs) Handles btnFillList.Click
         lstList.Items.Add("Jane")
         lstList.Items.Add("Dai")
@@ -43,6 +48,18 @@
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         lstList.Items.Clear()
+    End Sub
+    
+    Private Sub btnFile_Click(sender As Object, e As EventArgs) Handles btnFile.Click
+        Dim selectFile As New OpenFileDialog
+        selectFile.Title = "Select a file to load:"
+        selectFile.DefaultExt = ".txt"
+        selectFile.Filter = "*.txt|*.txt|All Files|*.*"
+        selectFile.ReadOnlyChecked = True
+        selectFile.InitialDirectory = Application.StartupPath
+        If selectFile.ShowDialog() = DialogResult.OK Then
+            
+        End If
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
