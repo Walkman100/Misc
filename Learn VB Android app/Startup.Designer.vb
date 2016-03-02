@@ -42,7 +42,7 @@ Partial Class Startup
         Me.btnArrays.Name = "btnArrays"
         Me.btnArrays.Size = New System.Drawing.Size(88, 23)
         Me.btnArrays.TabIndex = 9
-        Me.btnArrays.Text = "Arrays"
+        Me.btnArrays.Text = "Crash"
         Me.btnArrays.UseVisualStyleBackColor = true
         '
         'btnCalc

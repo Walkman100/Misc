@@ -1,47 +1,58 @@
 ﻿Public Class Startup
 
     Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
-        BasicCalculator.Show()
+        Dim newfrm = New BasicCalculator
+        newfrm.Show()
     End Sub
 
     Private Sub btnCountsTotals_Click(sender As Object, e As EventArgs) Handles btnCountsTotals.Click
-        CountsTotals.Show()
+        Dim newfrm = New CountsTotals
+        newfrm.Show()
     End Sub
 
     Private Sub btnMaths_Click(sender As Object, e As EventArgs) Handles btnMaths.Click
-        Maths.Show()
+        Dim newfrm = New Maths
+        newfrm.Show()
     End Sub
 
     Private Sub btnTime_Click(sender As Object, e As EventArgs) Handles btnTime.Click
-        TimeConverter.Show()
+        Dim newfrm = New TimeConverter
+        newfrm.Show()
     End Sub
 
     Private Sub btnInserter_Click(sender As Object, e As EventArgs) Handles btnInserter.Click
-        NumberInserter.Show()
+        Dim newfrm = New NumberInserter
+        newfrm.Show()
     End Sub
 
     Private Sub btnSteam_Click(sender As Object, e As EventArgs) Handles btnSteam.Click
-        SteamIDLinker.Show()
+        Dim newfrm = New SteamIDLinker
+        newfrm.Show()
     End Sub
 
     Private Sub btnList_Click(sender As Object, e As EventArgs) Handles btnList.Click
-        ListBox.Show()
+        Dim newfrm = New ListBox
+        newfrm.Show()
     End Sub
 
     Private Sub btnVars_Click(sender As Object, e As EventArgs) Handles btnVars.Click
-        Variables.Show()
+        Dim newfrm = New Variables
+        newfrm.Show()
     End Sub
 
     Private Sub btnArrays_Click(sender As Object, e As EventArgs) Handles btnArrays.Click
-        Arrays.Show()
+        Dim newfrm = New Arrays
+        newfrm.Show()
     End Sub
 
     Private Sub btnGitUpdater_Click(sender As Object, e As EventArgs) Handles btnGitUpdater.Click
-        GitUpdater.Show()
+        Dim newfrm = New GitUpdater
+        newfrm.Show()
     End Sub
 
     Private Sub btnTest_Click(sender As Object, e As EventArgs) Handles btnTest.Click
-        Test.Show()
+        Dim newfrm = New Test
+        newfrm.Show()
     End Sub
 
     Private Sub btnExit_Click(sender As Object, e As EventArgs) Handles btnExit.Click
