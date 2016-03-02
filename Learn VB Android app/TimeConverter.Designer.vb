@@ -100,6 +100,7 @@ Partial Class TimeConverter
         '
         'btnClose
         '
+        Me.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClose.Location = New System.Drawing.Point(291, 50)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
@@ -124,8 +125,10 @@ Partial Class TimeConverter
         '
         'TimeConverter
         '
+        Me.AcceptButton = Me.btnConvert
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnClose
         Me.ClientSize = New System.Drawing.Size(377, 98)
         Me.Controls.Add(Me.statusStrip)
         Me.Controls.Add(Me.btnClose)

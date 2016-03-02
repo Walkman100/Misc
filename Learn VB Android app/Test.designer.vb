@@ -25,7 +25,7 @@ Partial Class Test
         Me.cmdHello = New System.Windows.Forms.Button()
         Me.cmdExit = New System.Windows.Forms.Button()
         Me.lblHelloWorld = New System.Windows.Forms.Label()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'cmdHello
         '
@@ -34,20 +34,21 @@ Partial Class Test
         Me.cmdHello.Size = New System.Drawing.Size(75, 23)
         Me.cmdHello.TabIndex = 0
         Me.cmdHello.Text = "Click Me!"
-        Me.cmdHello.UseVisualStyleBackColor = True
+        Me.cmdHello.UseVisualStyleBackColor = true
         '
         'cmdExit
         '
+        Me.cmdExit.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.cmdExit.Location = New System.Drawing.Point(197, 227)
         Me.cmdExit.Name = "cmdExit"
         Me.cmdExit.Size = New System.Drawing.Size(75, 23)
         Me.cmdExit.TabIndex = 1
         Me.cmdExit.Text = "Close"
-        Me.cmdExit.UseVisualStyleBackColor = True
+        Me.cmdExit.UseVisualStyleBackColor = true
         '
         'lblHelloWorld
         '
-        Me.lblHelloWorld.AutoSize = True
+        Me.lblHelloWorld.AutoSize = true
         Me.lblHelloWorld.Location = New System.Drawing.Point(156, 81)
         Me.lblHelloWorld.Name = "lblHelloWorld"
         Me.lblHelloWorld.Size = New System.Drawing.Size(61, 13)
@@ -56,8 +57,10 @@ Partial Class Test
         '
         'Test
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AcceptButton = Me.cmdHello
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.cmdExit
         Me.ClientSize = New System.Drawing.Size(284, 262)
         Me.Controls.Add(Me.lblHelloWorld)
         Me.Controls.Add(Me.cmdExit)
@@ -65,9 +68,8 @@ Partial Class Test
         Me.Name = "Test"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "TestSolution"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Me.ResumeLayout(false)
+        Me.PerformLayout
     End Sub
     Friend WithEvents cmdHello As System.Windows.Forms.Button
     Friend WithEvents cmdExit As System.Windows.Forms.Button

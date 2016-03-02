@@ -32,9 +32,9 @@ Partial Class SteamIDLinker
         Me.btnInstall = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.WebBrowserGamePage = New System.Windows.Forms.WebBrowser()
-        CType(Me.imgLoading, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.imgGameImage, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.SuspendLayout()
+        CType(Me.imgLoading, System.ComponentModel.ISupportInitialize).BeginInit
+        CType(Me.imgGameImage, System.ComponentModel.ISupportInitialize).BeginInit
+        Me.SuspendLayout
         '
         'cbSteamGameID
         '
@@ -57,13 +57,13 @@ Partial Class SteamIDLinker
         Me.imgLoading.Size = New System.Drawing.Size(17, 17)
         Me.imgLoading.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage
         Me.imgLoading.TabIndex = 47
-        Me.imgLoading.TabStop = False
+        Me.imgLoading.TabStop = false
         '
         'lblGameName
         '
         Me.lblGameName.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.lblGameName.AutoEllipsis = True
+        Me.lblGameName.AutoEllipsis = true
         Me.lblGameName.Location = New System.Drawing.Point(12, 40)
         Me.lblGameName.Name = "lblGameName"
         Me.lblGameName.Size = New System.Drawing.Size(461, 14)
@@ -79,46 +79,47 @@ Partial Class SteamIDLinker
         Me.imgGameImage.Name = "imgGameImage"
         Me.imgGameImage.Size = New System.Drawing.Size(460, 215)
         Me.imgGameImage.TabIndex = 0
-        Me.imgGameImage.TabStop = False
+        Me.imgGameImage.TabStop = false
         '
         'btnRun
         '
-        Me.btnRun.Enabled = False
+        Me.btnRun.Enabled = false
         Me.btnRun.Location = New System.Drawing.Point(12, 60)
         Me.btnRun.Name = "btnRun"
         Me.btnRun.Size = New System.Drawing.Size(75, 23)
         Me.btnRun.TabIndex = 49
         Me.btnRun.Text = "Run"
-        Me.btnRun.UseVisualStyleBackColor = True
+        Me.btnRun.UseVisualStyleBackColor = true
         '
         'btnRunGameID
         '
-        Me.btnRunGameID.Enabled = False
+        Me.btnRunGameID.Enabled = false
         Me.btnRunGameID.Location = New System.Drawing.Point(93, 60)
         Me.btnRunGameID.Name = "btnRunGameID"
         Me.btnRunGameID.Size = New System.Drawing.Size(75, 23)
         Me.btnRunGameID.TabIndex = 50
         Me.btnRunGameID.Text = "RunGameID"
-        Me.btnRunGameID.UseVisualStyleBackColor = True
+        Me.btnRunGameID.UseVisualStyleBackColor = true
         '
         'btnInstall
         '
-        Me.btnInstall.Enabled = False
+        Me.btnInstall.Enabled = false
         Me.btnInstall.Location = New System.Drawing.Point(174, 60)
         Me.btnInstall.Name = "btnInstall"
         Me.btnInstall.Size = New System.Drawing.Size(75, 23)
         Me.btnInstall.TabIndex = 51
         Me.btnInstall.Text = "Install"
-        Me.btnInstall.UseVisualStyleBackColor = True
+        Me.btnInstall.UseVisualStyleBackColor = true
         '
         'btnClose
         '
+        Me.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClose.Location = New System.Drawing.Point(255, 60)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 52
         Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.btnClose.UseVisualStyleBackColor = true
         '
         'WebBrowserGamePage
         '
@@ -128,14 +129,16 @@ Partial Class SteamIDLinker
         Me.WebBrowserGamePage.Location = New System.Drawing.Point(12, 310)
         Me.WebBrowserGamePage.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowserGamePage.Name = "WebBrowserGamePage"
-        Me.WebBrowserGamePage.ScriptErrorsSuppressed = True
+        Me.WebBrowserGamePage.ScriptErrorsSuppressed = true
         Me.WebBrowserGamePage.Size = New System.Drawing.Size(461, 377)
         Me.WebBrowserGamePage.TabIndex = 53
         '
         'SteamIDLinker
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AcceptButton = Me.btnInstall
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnClose
         Me.ClientSize = New System.Drawing.Size(485, 699)
         Me.Controls.Add(Me.WebBrowserGamePage)
         Me.Controls.Add(Me.btnClose)
@@ -150,10 +153,9 @@ Partial Class SteamIDLinker
         Me.Name = "SteamIDLinker"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "SteamIDLinker"
-        CType(Me.imgLoading, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.imgGameImage, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ResumeLayout(False)
-
+        CType(Me.imgLoading, System.ComponentModel.ISupportInitialize).EndInit
+        CType(Me.imgGameImage, System.ComponentModel.ISupportInitialize).EndInit
+        Me.ResumeLayout(false)
     End Sub
     Friend WithEvents cbSteamGameID As System.Windows.Forms.ComboBox
     Friend WithEvents imgLoading As System.Windows.Forms.PictureBox

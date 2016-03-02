@@ -135,6 +135,7 @@ Partial Class Maths
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnExit
         Me.ClientSize = New System.Drawing.Size(340, 143)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.lblResult)

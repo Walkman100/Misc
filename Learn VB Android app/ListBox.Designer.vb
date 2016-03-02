@@ -51,7 +51,7 @@ Partial Class ListBox
         'btnMoveNameOut
         '
         Me.btnMoveNameOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.btnMoveNameOut.Location = New System.Drawing.Point(138, 12)
+        Me.btnMoveNameOut.Location = New System.Drawing.Point(138, 67)
         Me.btnMoveNameOut.Name = "btnMoveNameOut"
         Me.btnMoveNameOut.Size = New System.Drawing.Size(120, 40)
         Me.btnMoveNameOut.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class ListBox
         'btnMoveNameIn
         '
         Me.btnMoveNameIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.btnMoveNameIn.Location = New System.Drawing.Point(138, 67)
+        Me.btnMoveNameIn.Location = New System.Drawing.Point(264, 21)
         Me.btnMoveNameIn.Name = "btnMoveNameIn"
         Me.btnMoveNameIn.Size = New System.Drawing.Size(120, 40)
         Me.btnMoveNameIn.TabIndex = 2
@@ -127,7 +127,7 @@ Partial Class ListBox
         'txtIn
         '
         Me.txtIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.txtIn.Location = New System.Drawing.Point(264, 87)
+        Me.txtIn.Location = New System.Drawing.Point(138, 41)
         Me.txtIn.Name = "txtIn"
         Me.txtIn.Size = New System.Drawing.Size(120, 20)
         Me.txtIn.TabIndex = 8
@@ -135,7 +135,7 @@ Partial Class ListBox
         'txtOut
         '
         Me.txtOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.txtOut.Location = New System.Drawing.Point(264, 32)
+        Me.txtOut.Location = New System.Drawing.Point(264, 87)
         Me.txtOut.Name = "txtOut"
         Me.txtOut.Size = New System.Drawing.Size(120, 20)
         Me.txtOut.TabIndex = 9
@@ -143,7 +143,7 @@ Partial Class ListBox
         'lblIn
         '
         Me.lblIn.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblIn.Location = New System.Drawing.Point(264, 67)
+        Me.lblIn.Location = New System.Drawing.Point(138, 21)
         Me.lblIn.Name = "lblIn"
         Me.lblIn.Size = New System.Drawing.Size(120, 17)
         Me.lblIn.TabIndex = 10
@@ -153,7 +153,7 @@ Partial Class ListBox
         'lblOut
         '
         Me.lblOut.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
-        Me.lblOut.Location = New System.Drawing.Point(264, 12)
+        Me.lblOut.Location = New System.Drawing.Point(264, 67)
         Me.lblOut.Name = "lblOut"
         Me.lblOut.Size = New System.Drawing.Size(120, 17)
         Me.lblOut.TabIndex = 11
@@ -162,6 +162,7 @@ Partial Class ListBox
         '
         'btnFile
         '
+        Me.btnFile.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right),System.Windows.Forms.AnchorStyles)
         Me.btnFile.Location = New System.Drawing.Point(264, 113)
         Me.btnFile.Name = "btnFile"
         Me.btnFile.Size = New System.Drawing.Size(120, 40)

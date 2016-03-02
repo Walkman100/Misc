@@ -32,11 +32,11 @@ Partial Class NumberInserter
         Me.btnInsertGo = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.txtInsertStep = New System.Windows.Forms.TextBox()
-        Me.SuspendLayout()
+        Me.SuspendLayout
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
+        Me.Label1.AutoSize = true
         Me.Label1.Location = New System.Drawing.Point(12, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(102, 13)
@@ -46,14 +46,14 @@ Partial Class NumberInserter
         'btnClose
         '
         Me.btnClose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btnClose.AutoSize = True
+        Me.btnClose.AutoSize = true
         Me.btnClose.DialogResult = System.Windows.Forms.DialogResult.Cancel
         Me.btnClose.Location = New System.Drawing.Point(199, 62)
         Me.btnClose.Name = "btnClose"
         Me.btnClose.Size = New System.Drawing.Size(75, 23)
         Me.btnClose.TabIndex = 10
         Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
+        Me.btnClose.UseVisualStyleBackColor = true
         '
         'txtInsertFrom
         '
@@ -65,7 +65,7 @@ Partial Class NumberInserter
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.AutoSize = true
         Me.Label2.Location = New System.Drawing.Point(78, 28)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(16, 13)
@@ -82,7 +82,7 @@ Partial Class NumberInserter
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
+        Me.Label3.AutoSize = true
         Me.Label3.Location = New System.Drawing.Point(12, 48)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(81, 13)
@@ -104,11 +104,11 @@ Partial Class NumberInserter
         Me.btnInsertGo.Size = New System.Drawing.Size(75, 23)
         Me.btnInsertGo.TabIndex = 25
         Me.btnInsertGo.Text = "Go"
-        Me.btnInsertGo.UseVisualStyleBackColor = True
+        Me.btnInsertGo.UseVisualStyleBackColor = true
         '
         'Label4
         '
-        Me.Label4.AutoSize = True
+        Me.Label4.AutoSize = true
         Me.Label4.Location = New System.Drawing.Point(179, 28)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(29, 13)
@@ -125,8 +125,10 @@ Partial Class NumberInserter
         '
         'NumberInserter
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AcceptButton = Me.btnInsertGo
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6!, 13!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.CancelButton = Me.btnClose
         Me.ClientSize = New System.Drawing.Size(286, 97)
         Me.Controls.Add(Me.txtInsertStep)
         Me.Controls.Add(Me.Label1)
@@ -141,9 +143,8 @@ Partial Class NumberInserter
         Me.Name = "NumberInserter"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "NumberInserter"
-        Me.ResumeLayout(False)
-        Me.PerformLayout()
-
+        Me.ResumeLayout(false)
+        Me.PerformLayout
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents btnClose As System.Windows.Forms.Button
