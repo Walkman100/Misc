@@ -1,4 +1,4 @@
-﻿Module SudoCMD
+Module SudoCMD
     Dim isFirst As Boolean = True
     Dim ProgramToLaunch As String = ""
     Dim args As String = ""

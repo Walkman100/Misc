@@ -1,4 +1,4 @@
-﻿Public Class Startup
+Public Class Startup
 
     Private Sub btnCalc_Click(sender As Object, e As EventArgs) Handles btnCalc.Click
         Dim newfrm = New BasicCalculator

@@ -1,4 +1,4 @@
-﻿Public Class ErrorArk
+Public Class ErrorArk
     Dim score As Integer = 0
     Dim facing as byte = 0 '0 is NE, 1 is SE, 2 is SW, 3 is NW
     

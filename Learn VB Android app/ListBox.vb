@@ -1,4 +1,4 @@
-﻿Public Class ListBox
+Public Class ListBox
     
     Private Sub lstList_DoubleClick(sender As Object, e As EventArgs) Handles lstList.DoubleClick
         lstList.Sorted = True

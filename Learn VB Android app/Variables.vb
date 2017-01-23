@@ -1,4 +1,4 @@
-﻿Public Class Variables
+Public Class Variables
     Dim Num1 As Integer
     Dim Num2 As Integer
     Dim Answer As Integer

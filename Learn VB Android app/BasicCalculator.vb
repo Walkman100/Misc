@@ -1,4 +1,4 @@
-﻿Public Class BasicCalculator
+Public Class BasicCalculator
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         txtOutput.Text = Val(txtInOne.Text) + Val(txtInTwo.Text)

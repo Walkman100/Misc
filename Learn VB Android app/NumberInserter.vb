@@ -1,4 +1,4 @@
-﻿Public Class NumberInserter
+Public Class NumberInserter
     Dim InsertFrom As Integer
     Dim InsertTo As Integer
     Dim InsertStep As Integer

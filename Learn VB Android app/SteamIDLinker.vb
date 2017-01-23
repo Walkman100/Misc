@@ -1,4 +1,4 @@
-﻿Public Class SteamIDLinker
+Public Class SteamIDLinker
     Private Sub MsgNoGameID()
         MsgBox("Please fill in a Game ID!", MsgBoxStyle.Critical, "No Game ID entered")
         Me.BringToFront()

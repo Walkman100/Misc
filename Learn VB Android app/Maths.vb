@@ -1,4 +1,4 @@
-﻿Public Class Maths
+Public Class Maths
     
     Private Sub txtFactor_TextChanged(sender As Object, e As EventArgs) Handles txtFactor.TextChanged, txtNumber1.TextChanged, txtNumber2.TextChanged, txtNumber3.TextChanged
         txtResult1.Text = txtNumber1.Text / txtFactor.Text

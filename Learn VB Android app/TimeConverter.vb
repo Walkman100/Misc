@@ -1,4 +1,4 @@
-﻿Public Class TimeConverter
+Public Class TimeConverter
 
     Private Sub TimeConverter_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         cbConvertType.SelectedIndex = 0

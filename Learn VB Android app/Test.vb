@@ -1,4 +1,4 @@
-﻿Public Class Test
+Public Class Test
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs)

@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
 Public Class SudoGUI
     Inherits System.Windows.Forms.Form
     Dim isFirst As Boolean = True

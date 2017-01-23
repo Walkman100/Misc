@@ -1,4 +1,4 @@
-﻿Public Class CountsTotals
+Public Class CountsTotals
 
     Private Sub btnDoIt_Click(sender As Object, e As EventArgs) Handles btnDoIt.Click
         txtCount.Text = Val(txtCount.Text) + 1
