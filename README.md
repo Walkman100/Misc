@@ -1,7 +1,7 @@
 # Misc Files and Projects
 Some projects and stuff. 
 
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/Walkman100/Walkman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Walkman100/Walkman?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
  - [![Build status](https://ci.appveyor.com/api/projects/status/mhw2r75d4olu4yhv)](https://ci.appveyor.com/project/Walkman100/misc) Remake of an error program I found: Arkanoid Error (ErrorArk) Remake
  - [![Build status](https://ci.appveyor.com/api/projects/status/m6bfp5x0r5bpfpa1)](https://ci.appveyor.com/project/Walkman100/misc-166) Learn VB Android App: Contains many forms that do different things, mainly for testing.

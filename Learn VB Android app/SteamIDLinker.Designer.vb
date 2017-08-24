@@ -40,7 +40,7 @@ Partial Class SteamIDLinker
         '
         Me.cbSteamGameID.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.cbSteamGameID.Items.AddRange(New Object() {"60", "220", "440", "620", "730"})
+        Me.cbSteamGameID.Items.AddRange(New Object() {"60", "220", "440", "620", "730", "427270"})
         Me.cbSteamGameID.Location = New System.Drawing.Point(12, 12)
         Me.cbSteamGameID.MaxDropDownItems = 50
         Me.cbSteamGameID.Name = "cbSteamGameID"
