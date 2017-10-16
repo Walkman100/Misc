@@ -9,7 +9,3 @@ Some projects and stuff.
  - The Binaries folder has it's own [README.md](https://github.com/Walkman100/Misc/blob/master/Binaries/README.md)
 
 I have a [Google Drive folder](https://drive.google.com/folderview?authuser=0&hl=en_GB&id=0B5O1IfjRIVDERG1mOHNNYktXb2c#list) that has many useful scripts and programs, this repo will have files that I am working on to go into that folder. It is also on [Dropbox](https://www.dropbox.com/sh/ej1dmf7sk295kcl/JQIrJKV8Oh) (Full page [here](https://sites.google.com/site/wscripthostsamples/))
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Walkman100/misc/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
