@@ -42,9 +42,6 @@ Function nsDialogsPage
 FunctionEnd
 
 Function .onInit
-  MessageBox MB_YESNO "This will add an entry to the Explorer Context menu on drives to open Rufus. Do you wish to continue?" IDYES gogogo
-    Abort
-  gogogo:
   SetShellVarContext all
   SetAutoClose true
 FunctionEnd
