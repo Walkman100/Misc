@@ -12,7 +12,7 @@ Imports System.Runtime.InteropServices
 <Assembly: AssemblyDescription("Error Arkanoid VB.Net Remake")> 
 <Assembly: AssemblyCompany("WalkmanOSS")> 
 <Assembly: AssemblyProduct("ErrorArk")> 
-<Assembly: AssemblyCopyright("FOSS from Walkman 2014-15")> 
+<Assembly: AssemblyCopyright("FOSS from Walkman 2014-21")> 
 <Assembly: AssemblyTrademark("")> 
 
 <Assembly: ComVisible(False)>
