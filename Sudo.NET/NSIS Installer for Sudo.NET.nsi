@@ -2,13 +2,22 @@
 ; get NSIS at http://nsis.sourceforge.net/Download
 
 !define ProgramName "Sudo Scripts"
+!define ProgramVersion 1.0.2.0
 Icon "ImageRes(#68).ico"
 
 Name "${ProgramName}"
 Caption "${ProgramName} Installer"
 XPStyle on
+Unicode true
 ShowInstDetails show
 AutoCloseWindow true
+
+VIProductVersion ${ProgramVersion}
+VIAddVersionKey "ProductVersion" "${ProgramVersion}"
+VIAddVersionKey "ProductName" "${ProgramName}"
+VIAddVersionKey "FileVersion" "${ProgramVersion}"
+VIAddVersionKey "LegalCopyright" "FOSS Walkman"
+VIAddVersionKey "FileDescription" "${ProgramName} Installer"
 
 LicenseBkColor /windows
 LicenseData "..\LICENSE.md"
@@ -43,6 +52,7 @@ Section "Add to Windows Programs & Features"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${ProgramName}" "DisplayIcon" "C:\Windows\System32\cmd.exe"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${ProgramName}" "InstallLocation" "$INSTDIR\"
   WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${ProgramName}" "UninstallString" "$INSTDIR\${ProgramName}-Uninst.exe"
+  WriteRegStr HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${ProgramName}" "DisplayVersion" "${ProgramVersion}"
   
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${ProgramName}" "NoModify" 1
   WriteRegDWORD HKLM "Software\Microsoft\Windows\CurrentVersion\Uninstall\${ProgramName}" "NoRepair" 1

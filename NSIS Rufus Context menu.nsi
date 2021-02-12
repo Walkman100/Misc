@@ -1,11 +1,11 @@
 ; Rufus Context menu Installer NSIS Script
 ; get NSIS at http://nsis.sourceforge.net/Download
-; As a program that all Power PC users should have, Notepad++ is recommended to edit this file
 
 Icon "Rufus.ico"
 Caption "Rufus Context menu Installer"
 Name "Rufus Context menu"
 XPStyle on
+Unicode true
 AutoCloseWindow true
 ShowInstDetails show
 Var RufusPath
@@ -47,5 +47,5 @@ Function .onInit
 FunctionEnd
 
 Function .onInstSuccess
-    MessageBox MB_OK "Install Complete"
+  MessageBox MB_OK "Install Complete"
 FunctionEnd
